@@ -1,0 +1,26 @@
+
+#todo{
+    display:flex;
+    height:60px;
+    box-sizing: border-box;
+}
+#rojo{
+    width:25%; 
+    background-color:red;
+}
+
+#verde{
+   background-color: green;
+   width:50%;   
+   border-width: 40px; 
+   border: solid 10px;
+  
+
+}
+
+#azul{
+    background-color: blue;
+    width:25%;
+    
+
+}
