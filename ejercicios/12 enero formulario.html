@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es-es">
+
+<!--
+
+Trabajo: Formulario
+Fecha: 12 Enero 2021
+Autor: Miguel Ángel Arcos Reyes
+Curso: 1º DAM/DAW 2020-2021 - CENEC
+Comentario:
+
+-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″/>
+<meta name="description" content= "La ciudad de Málaga"/>
+<meta name="keywords" content= "palabras clave separadas por comas">
+<meta name="author" content="Miguel Ángel Arcos Reyes"/>
+
+<title>Formulario</title>
+
+</head>
+
+
+	<body>
+
+		<h1>VALIDACIÓN DE FORMULARIOS</h1>
+		<h2>HTML Forms</h2>
+
+		<form action="12 enero formulario.js">
+		  <label for="fname">Nombre:</label><br>
+		  <input type="text" id="fname" name="nombre" maxlength="30" required><br>
+		  <label for="lname">Apellidos:</label><br>
+		  <input type="text" id="lname" name="apellidos" maxlength="30" required><br><br>
+		  <label for="edad">Edad:</label><br>
+		  <input type="number" id="edad" name="edad" min="18" max="120" required> <br>
+		  <label for="fnacimiento">Fecha de nacimiento:</label><br>
+		  <input type="date" id="fnacimiento" name="fnacimiento" max="2004-12-31" min="1900-01-01" required><br><br>
+		  <label for="colorfav">Color favorito:</label><br>
+		  <input type="color" id="colorfav" name="colorfav" required><br><br>   
+		  <input type="submit" value="Enviar">
+		</form> 
+		
+		
+
+	</body>
+</html>
