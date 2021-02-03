@@ -14,7 +14,51 @@ fecha:
     <link rel="stylesheet" href="00-modelo.css">
 
 </head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /*con esto se queda el texto totalmente pegado a los bordes de los divs*/
+}
 
+#dext {
+    display: flex;
+    background-color: gray;
+}
+
+#di {
+    background-color: rgba(255, 144, 144, 0.733);
+}
+
+#dc {
+    background-color: rgb(101, 240, 101);
+    /*padding-left: 10px; /*no es como el margen, esto afecta a las cosas de dentro del div*/
+}
+
+#dd {
+    background-color: rgb(132, 204, 245);
+}
+
+#di,
+#dc,
+#dd {
+    width: 33.33%;
+    min-height: 40px;
+    max-height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    #dext {
+        display: block;
+    }
+    #di,
+    #dc,
+    #dd {
+        width: 100%;
+    }
+}
+    </style>
 
 <body>
     <div id="dext">
