@@ -1,0 +1,38 @@
+/*
+CSS 
+web o pagina:
+autor:
+fecha:
+RECORDAR:
+en caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
+
+*/
+
+.imgD {
+    float: right;
+    margin: 10px;
+    width: 25%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.imgI {
+    float: left;
+    margin: 10px;
+    clear: right;
+    width: 25%;
+    height: auto;
+}
+
+
+/*
+Más selectores y documentación:
+pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
+pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
+pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
+formularios: https://www.w3schools.com/css/css_form.asp
+posicionamiento: https://www.w3schools.com/css/css_positioning.asp
+*/
