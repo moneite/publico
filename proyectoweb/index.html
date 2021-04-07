@@ -31,6 +31,8 @@ fecha: Marzo 2021
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.PNG" />
+    <link href='https://css.gg/css' rel='stylesheet'>
+
 
 
 
@@ -98,10 +100,13 @@ fecha: Marzo 2021
         color: #fff;
         line-height: 65px;
         font-size: 2.4rem;
+        text-shadow: 0px 2px #000000;
     }
     
     .nav div.main_list ul li a:hover {
         color: #d60909;
+        font-weight: lighter;
+        text-shadow: none;
     }
     
     .home {
@@ -120,6 +125,10 @@ fecha: Marzo 2021
         padding-bottom: 20px;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
+    }
+    
+    .nav a {
+        font-weight: bold;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -258,6 +267,10 @@ fecha: Marzo 2021
         transition: background-color 200ms linear;
     }
     
+    .nav.scrolled div.main_list ul li a {
+        text-shadow: none;
+    }
+    
     .logoWeb.scrolled {
         display: none;
     }
@@ -292,10 +305,12 @@ fecha: Marzo 2021
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <a id=1 href="#">Cine</a>
+                    </li>
+                    <li><a href="#">Universo</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Influencia</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
