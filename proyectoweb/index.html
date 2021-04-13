@@ -284,11 +284,6 @@ fecha: Abril 2021
         display: hidden;
     }
     
-    #army.scrolled {
-        display: inline;
-        transition: display 200ms linear;
-    }
-    
     .myH2 {
         color: #d60909;
     }
@@ -436,7 +431,7 @@ fecha: Abril 2021
             de precedente para una gran cantidad de películas de terror que saldrían posteriormente.
             <br>
             <br>
-            <a href="#" class="button" data-aos="fade-bottom">+INFO></a>
+            <a href="#" class="button">+INFO></a>
 
 
         </p>
@@ -481,12 +476,6 @@ fecha: Abril 2021
         });
     });
 
-    $(function() {
-        $(document).scrollTop(function() {
-            var $nav = $("#army ");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
     AOS.init({
         duration: 1200,
     });
