@@ -112,7 +112,13 @@ fecha: Abril 2021
     .home {
         width: 100%;
         height: 100vh;
-        background-image: url("./media/bg1.jpg");
+        box-shadow: inset 0 0 45em 0 #000;
+        background-image: url("./media/bg1.gif");
+        background-size: cover;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
     
@@ -134,56 +140,6 @@ fecha: Abril 2021
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         .container {
             margin: 0;
-        }
-    }
-    
-    @media screen and (max-width:968px) {
-        .home {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .navTrigger {
-            display: block;
-        }
-        .nav div.logo {
-            margin-left: 15px;
-        }
-        .nav div.main_list {
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-        }
-        .nav div.show_list {
-            height: auto;
-            display: none;
-        }
-        .nav div.main_list ul {
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            background-color: #111;
-            /*same background color of navbar*/
-            background-position: center top;
-        }
-        .nav div.main_list ul li {
-            width: 100%;
-            text-align: right;
-        }
-        .nav div.main_list ul li a {
-            text-align: center;
-            width: 100%;
-            font-size: 3rem;
-            padding: 20px;
-        }
-        .nav div.media_button {
-            display: block;
-        }
-        .logoWeb {
-            height: 60px;
         }
     }
     
@@ -276,10 +232,6 @@ fecha: Abril 2021
         text-shadow: none;
     }
     
-    .logoWeb.scrolled {
-        display: none;
-    }
-    
     .logoblanco {
         display: none;
     }
@@ -306,6 +258,66 @@ fecha: Abril 2021
         display: inline;
         height: 35px;
     }
+    
+    #logoGrande {
+        display: block;
+        margin: auto;
+        padding-top: 20%;
+        width: 100%;
+    }
+    
+    @media screen and (max-width:968px) {
+        .home {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .navTrigger {
+            display: block;
+        }
+        .nav div.logo {
+            margin-left: 15px;
+        }
+        .nav div.main_list {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+        .nav div.show_list {
+            height: auto;
+            display: none;
+        }
+        .nav div.main_list ul {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #111;
+            /*same background color of navbar*/
+            background-position: center top;
+        }
+        .nav div.main_list ul li {
+            width: 100%;
+            text-align: right;
+        }
+        .nav div.main_list ul li a {
+            text-align: center;
+            width: 100%;
+            font-size: 3rem;
+            padding: 20px;
+        }
+        .nav div.media_button {
+            display: block;
+        }
+        #logoGrande {
+            padding-top: 60%;
+            display: block;
+            -webkit-filter: drop-shadow(10px 10px 10px #222);
+            filter: drop-shadow(10px 10px 10px #222);
+        }
+    }
 </style>
 
 
@@ -314,7 +326,7 @@ fecha: Abril 2021
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#"><img class="logoWeb" src="./media/logo.png" alt="Logo de Evil Dead" height="80px"></a>
+
                 <a href="#"><img class="logoblanco" src="./media/logoblanco.png" alt="Logo de Evil Dead" height="80px"></a>
             </div>
             <div id="mainListDiv" class="main_list">
@@ -326,7 +338,7 @@ fecha: Abril 2021
                         <a id="universo" href=" # "><img id="libro" src="./media/libro.png " alt="Libro de Evil Dead">Universo</a>
                     </li>
                     <li>
-                        <a id="Curiosidades" href="# "><img id="escopeta" src="./media/escopeta.png " alt="Escopeta de Evil Dead">Curiosidades</a>
+                        <a id="Curiosidades" href="# "><img id="escopeta" src="./media/escopeta.png" alt="Escopeta de Evil Dead">Curiosidades</a>
                     </li>
                     <li>
                         <a href="# "><img id="cabaña" src="./media/cabaña.png " alt="Cabaña de Evil Dead">Influencia</a>
@@ -342,6 +354,7 @@ fecha: Abril 2021
     </nav>
 
     <section class="home ">
+        <img id="logoGrande" src="./media/LOGOSUPER.png " alt="Logo de Evil Dead">
     </section>
     <div id=div1>
         <!-- just to make scrolling effect possible -->
@@ -383,7 +396,7 @@ fecha: Abril 2021
 
         $(function() {
             $(document).scroll(function() {
-                var $nav = $(".logoWeb ");
+                var $nav = $("#logoGrande ");
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
         });
