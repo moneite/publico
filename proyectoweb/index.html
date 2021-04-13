@@ -30,14 +30,17 @@ fecha: Abril 2021
     <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.PNG" />
     <link href='https://css.gg/css' rel='stylesheet'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
 
 
 
 
 </head>
-
 <style>
     html,
     body {
@@ -47,6 +50,8 @@ fecha: Abril 2021
         font-family: "Quicksand", sans-serif;
         font-size: 62.5%;
         font-size: 10px;
+        background-color: #000;
+        color: #fff;
     }
     
     .nav {
@@ -241,10 +246,6 @@ fecha: Abril 2021
         transition: display 200ms linear;
     }
     
-    #div1 {
-        height: 1000px;
-    }
-    
     .logoWeb {
         -webkit-filter: drop-shadow(10px 10px 10px #222);
         filter: drop-shadow(10px 10px 10px #222);
@@ -264,6 +265,32 @@ fecha: Abril 2021
         margin: auto;
         padding-top: 20%;
         width: 100%;
+    }
+    
+    .myP {
+        padding-left: 15%;
+        padding-right: 5%;
+        font-size: x-large;
+    }
+    
+    #div2 {
+        display: flex;
+        align-items: center;
+    }
+    
+    #army {
+        min-width: 32%;
+        margin-right: 0px;
+        display: hidden;
+    }
+    
+    #army.scrolled {
+        display: inline;
+        transition: display 200ms linear;
+    }
+    
+    .myH2 {
+        color: #d60909;
     }
     
     @media screen and (max-width:968px) {
@@ -298,8 +325,8 @@ fecha: Abril 2021
             left: 0;
             bottom: 0;
             background-color: #111;
-            /*same background color of navbar*/
             background-position: center top;
+            opacity: 0.8;
         }
         .nav div.main_list ul li {
             width: 100%;
@@ -316,6 +343,13 @@ fecha: Abril 2021
         }
         .logoblanco {
             display: inline;
+        }
+        #div2 {
+            display: inline;
+            align-items: center;
+        }
+        #army {
+            width: 100%;
         }
     }
 </style>
@@ -358,57 +392,64 @@ fecha: Abril 2021
 
         <img id="logoGrande" src="./media/LOGOSUPER.png " alt="Logo de Evil Dead">
     </section>
-    <div id=div1>
-        <!-- just to make scrolling effect possible -->
-        <h2 class="myH2 ">¿ Qué es Evil Dead ?</h2>
-        <p class="myP ">This is a responsive fixed navbar animated on scroll</p>
-        <p class="myP ">I took inspiration from ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100 ">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>) and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
-        <p class="myP ">I HOPE YOU FIND THIS USEFULL</p>
-        <p class="myP ">Albi</p>
-        <p class="myP ">
 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis
-            placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem
-            aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam,
-            dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo
-            itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi
-            harum eos voluptatibus animi labore officiis minus laboriosam
+
+    <h2 class="myH2 ">¿Qué es Evil Dead?</h2>
+
+    <div id=div2>
+        <p class="myP ">
+            Evil Dead es una franquicia de Terror creada por Sam Raimi. Esta franquicia se ha convertido en una obra de culto entre todos sus seguidores. Cuenta con 3 películas, un reboot, una serie de televisión, comics, videojuegos, etc. Sin ninguna duda, es un
+            gran estandarte de la cultura pop para todos los amantes del terror y la comedia. Una de las grandes características de la saga es el personaje de Ash, un protagonista de lo más particular. Además, la primera película estrenada en 1981 sirvió
+            de precedente para una gran cantidad de películas de terror que saldrían posteriormente.
         </p>
+
+        <img id="army" src="./media/armyofdarkness.png " alt="poster armyofdarkness" data-aos="fade-right">
     </div>
 
 
 
 
-    <script>
-        $('.navTrigger').click(function() {
-            $(this).toggleClass('active');
-            console.log("Clicked menu ");
-            $("#mainListDiv ").toggleClass("show_list ");
-            $("#mainListDiv ").fadeIn();
 
-        });
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $(".nav ");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-        });
 
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $("#logoGrande ");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-        });
+</body>
+<script>
+    $('.navTrigger').click(function() {
+        $(this).toggleClass('active');
+        console.log("Clicked menu ");
+        $("#mainListDiv ").toggleClass("show_list ");
+        $("#mainListDiv ").fadeIn();
 
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $(".logoblanco ");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
+    });
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $(".nav ");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
-    </script>
+    });
+
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $("#logoGrande ");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $(".logoblanco ");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+
+    $(function() {
+        $(document).scrollTop(function() {
+            var $nav = $("#army ");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+    AOS.init({
+        duration: 1200,
+    });
+</script>
 
 </html>
