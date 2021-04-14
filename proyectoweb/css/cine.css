@@ -1,75 +1,3 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
-    background-color: #000;
-    color: #fff;
-}
-
-.nav {
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
-}
-
-.nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 3rem;
-}
-
-.nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color: #00E676;
-}
-
-.nav div.main_list {
-    height: 65px;
-    float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
-.nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
-    text-shadow: 0px 2px #000000;
-}
-
-.nav div.main_list ul li a:hover {
-    color: #d60909;
-    font-weight: bolder;
-    cursor: url("../media/manoevildead.png"), auto;
-}
-
 .home {
     width: 100%;
     height: 100%;
@@ -81,94 +9,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.nav a {
-    font-weight: bold;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-}
-
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
-
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
-.affix {
-    padding: 0;
-    background-color: #111;
-}
-
-.myH2 {
-    text-align: center;
-    font-size: 4rem;
+#peli2 {
+    background-image: url("../media/evildead2bg.jpg");
 }
 
 .myP {
@@ -176,6 +21,13 @@ body {
     font-size: 200%;
     padding-left: 15%;
     padding-right: 5%;
+}
+
+.myP2 {
+    text-align: justify;
+    font-size: 200%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 @media all and (max-width:700px) {
@@ -195,27 +47,9 @@ body {
     padding-top: 0%;
 }
 
-.nav div.main_list ul li a {
-    text-shadow: none;
-}
-
 .logoblanco {
     display: inline;
     transition: display 200ms linear;
-}
-
-.logoWeb {
-    -webkit-filter: drop-shadow(10px 10px 10px #222);
-    filter: drop-shadow(10px 10px 10px #222);
-}
-
-.nav div.main_list ul li a img {
-    display: none;
-}
-
-.nav div.main_list ul li a:hover img {
-    display: inline;
-    height: 35px;
 }
 
 #div2 {
@@ -233,60 +67,6 @@ body {
     color: #d60909;
 }
 
-a.button {
-    padding: 0.3em 1.2em;
-    margin-left: 0%;
-    border: 0.16em solid rgba(255, 255, 255, 0);
-    border-radius: 2em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-    color: #FFFFFF;
-    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-    text-align: center;
-    transition: all 0.2s;
-    background-color: #f14e4e;
-}
-
-a.button:hover {
-    border-color: rgba(255, 255, 255, 1);
-    font-size: large;
-    background-color: #f85757;
-}
-
-.footer {
-    width: 100%;
-    background: #9e0c0c67;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    font-family: 'Play', sans-serif;
-    text-align: center;
-    font-size: medium;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.footer .row {
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: rgb(255, 255, 255);
-    font-size: 0.8em;
-}
-
-.ytnormal:hover {
-    content: url('../media/youtube-logo-sangre.png');
-}
-
-.twnormal:hover {
-    content: url('../media/Twitter-Logo-sangre.png');
-}
-
-.ignormal:hover {
-    content: url('../media/instagram-logo-sangre.png');
-}
-
 .fondo {
     display: flex;
 }
@@ -300,7 +80,7 @@ a.button:hover {
 
 .divlogopeli1 {
     width: 30%;
-    padding-top: 105px;
+    padding-top: 110px;
     padding-left: 6%;
 }
 
@@ -313,6 +93,182 @@ a.button:hover {
     padding-bottom: 0%;
     display: block;
     margin-bottom: 0%;
+}
+
+#logopeli2 {
+    -webkit-filter: drop-shadow(10px 10px 10px #222);
+    filter: drop-shadow(10px 10px 10px #222);
+    width: 60%;
+    display: inline-flex;
+}
+
+.divlogopeli2 {
+    width: 30%;
+    padding-left: 70%;
+    padding-top: 2%;
+}
+
+.divposterpeli2 {
+    padding-bottom: 0%;
+    display: flex;
+    z-index: 9;
+}
+
+#posterpeli2 {
+    padding-bottom: 0%;
+    display: block;
+    margin-bottom: 0%;
+}
+
+#button2 {
+    background-color: rgb(11, 97, 97);
+}
+
+#button3 {
+    background-color: brown;
+}
+
+#button4 {
+    background-color: rgb(110, 21, 65);
+}
+
+.ficha {
+    font-size: smaller;
+}
+
+#salto {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 110px 62px 0px 62px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 0 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+/* Same with your slides, you set the display to none, because you want to choose which 
+one is shown at a time. */
+
+.slide {
+    display: none;
+}
+
+.image-slide {
+    width: 100%;
+}
+
+.modal-preview {
+    width: 100%;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* You want the previews a little transparent to show that they are "inactive". 
+You then add an .active or :hover class to animate the selections for your user when
+they interact with your controls and clickable content.
+*/
+
+img.preview,
+img.modal-preview {
+    opacity: 0.6;
+}
+
+img.active,
+.preview:hover,
+.modal-preview:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close {
+    color: rgb(255, 0, 0);
+    position: sticky;
+    top: 50px;
+    margin-right: 0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    width: 70%;
+}
+
+.modal img {
+    width: 40%;
+    margin-left: 25%;
+}
+
+#posterpeli2movil {
+    display: none;
+}
+
+#movil {
+    display: none;
 }
 
 @media all and (max-width: 30em) {
@@ -392,6 +348,25 @@ a.button:hover {
     #posterpeli1 {
         width: 100%;
     }
+    #posterpeli2movil {
+        display: inline;
+        padding-top: 5%;
+        width: 35%;
+        margin-right: 100%;
+    }
+    .divlogopeli2 {
+        padding-left: 30%;
+        width: 45%;
+    }
+    .divposterpeli2 {
+        display: list-item;
+    }
+    #logopeli2 {
+        width: 100%;
+    }
+    #posterpeli2 {
+        display: none;
+    }
     a.button {
         float: left;
     }
@@ -408,5 +383,17 @@ a.button:hover {
     }
     .footer p {
         text-align: center;
+    }
+    #salto {
+        display: inline;
+    }
+    .modal img {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .myP2 {
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }

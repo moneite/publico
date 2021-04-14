@@ -386,4 +386,8 @@ a.button:hover {
     .footer p {
         text-align: center;
     }
+    .myP {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
