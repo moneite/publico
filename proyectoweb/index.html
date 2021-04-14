@@ -312,24 +312,34 @@ fecha: Abril 2021
     
     .footer {
         width: 100%;
-        background: #a54242;
+        background: #9e0c0c67;
         padding-top: 0px;
         padding-bottom: 5px;
         font-family: 'Play', sans-serif;
         text-align: center;
         font-size: medium;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     .footer .row {
         width: 100%;
         margin: 1% 0%;
         padding: 0.6% 0%;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 0.8em;
     }
     
-    .footer .row a:hover {
-        color: #fff;
+    .ytnormal:hover {
+        content: url('./media/youtube-logo-sangre.png');
+    }
+    
+    .twnormal:hover {
+        content: url('./media/Twitter-Logo-sangre.png');
+    }
+    
+    .ignormal:hover {
+        content: url('./media/instagram-logo-sangre.png');
     }
     
     @media all and (max-width: 30em) {
@@ -406,16 +416,17 @@ fecha: Abril 2021
         }
         .footer {
             text-align: left;
-            padding: 5%;
             padding-bottom: 1%;
             padding-top: 0%;
+            padding-left: 0px;
+            padding-right: 0px;
             font-size: 100%;
         }
         .footer a {
             margin-left: 18%;
         }
         .footer p {
-            margin-left: 13%;
+            text-align: center;
         }
     }
 </style>
@@ -435,7 +446,7 @@ fecha: Abril 2021
                         <a id="cine" href="#"><img id="sierra" src="./media/chainsaw.png" alt="Sierra de Evil Dead">Cine</a>
                     </li>
                     <li>
-                        <a id="universo" href=" # "><img id="libro" src="./media/libro.png " alt="Libro de Evil Dead">Universo</a>
+                        <a id="universo" href="#"><img id="libro" src="./media/libro.png " alt="Libro de Evil Dead">Universo</a>
                     </li>
                     <li>
                         <a id="Curiosidades" href="# "><img id="escopeta" src="./media/escopeta.png" alt="Escopeta de Evil Dead">Curiosidades</a>
@@ -483,9 +494,10 @@ fecha: Abril 2021
         <div class="footer">
             <div class="row">
                 <p>Miguel Ángel Arcos Copyright © 2021 - All rights reserved || Designed By: Moneite</p>
-                <a href="#"><img src="./media/youtube-logo.png" alt="Logo Youtube" height="30px"></a>
-                <a href="#"><img src="./media/Twitter-Logo.png" alt="Logo Twitter" height="30px"></a>
-                <a href="#"><img src="./media/instagram-logo.png" alt="Logo Youtube" height="30px"></a>
+                <a href="https://cutt.ly/Vvu2NcD" target="_blank"><img class="ytnormal" src="./media/youtube-logo.png" alt="Logo Youtube" height="30px"></a>
+                <a href="https://twitter.com/EvilDead" target="_blank"><img class="twnormal" src="./media/Twitter-Logo.png" alt="Logo Twitter" height="30px"></a>
+                <a href="https://www.instagram.com/ashvsevildead/?hl=es" target="_blank"><img class="ignormal" src="./media/instagram-logo.png" alt="Logo instagram" height="30px"></a>
+
             </div>
 
 
