@@ -186,3 +186,11 @@ function overlayOn3() {
 function overlayOff3() {
     document.getElementById("overlayVideo3").style.display = "none";
 }
+
+function overlayOn5() {
+    document.getElementById("overlaySerie").style.display = "block";
+}
+
+function overlayOff5() {
+    document.getElementById("overlaySerie").style.display = "none";
+}

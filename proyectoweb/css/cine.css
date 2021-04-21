@@ -20,6 +20,10 @@
     background-image: url("../media/evildead3bg.jpg");
 }
 
+#serie {
+    background-image: url("../media/evildead4bg.jpg");
+}
+
 .myP {
     text-align: justify;
     font-size: 200%;
@@ -126,6 +130,26 @@
     padding-bottom: 0%;
     display: block;
     margin-bottom: 0%;
+}
+
+#posterserie {
+    padding-bottom: 0%;
+    display: inline;
+    margin-bottom: 0%;
+    width: 90%;
+}
+
+#necronomiconpng {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+#logoserie {
+    -webkit-filter: drop-shadow(10px 10px 10px #222);
+    filter: drop-shadow(10px 10px 10px #222);
+    width: 80%;
+    display: inline-flex;
 }
 
 #logopeli3 {
@@ -276,11 +300,10 @@ img.hover-shadow {
     margin-left: 25%;
 }
 
-#posterpeli2movil {
-    display: none;
-}
-
-#movil {
+#posterpeli2movil,
+#movil,
+#divmovil3,
+#posterseriemovil {
     display: none;
 }
 
@@ -301,10 +324,6 @@ img.hover-shadow {
 
 #evilash {
     height: 550px;
-}
-
-#divmovil3 {
-    display: none;
 }
 
 .overlayVideoGeneral {
@@ -517,5 +536,33 @@ img.hover-shadow {
     body,
     html {
         overflow-x: none!important;
+    }
+    #necronomiconpngmovil {
+        display: inline;
+        margin: auto;
+        width: 40%;
+    }
+    #necronomiconpng {
+        display: none;
+    }
+    #posterserie {
+        display: none;
+    }
+    #posterseriemovil {
+        display: block;
+        margin: auto;
+        width: 35%;
+    }
+    #divlogoserie {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    #logoserie {
+        display: block;
+        margin: auto;
+    }
+    #serieposterdivmovil {
+        padding-top: 5%;
     }
 }
