@@ -454,7 +454,7 @@ img.hover-shadow {
         display: inline;
     }
     .modal img {
-        width: 80%;
+        width: 20%;
         margin-top: 10%;
         margin-left: 0%;
     }
@@ -473,7 +473,7 @@ img.hover-shadow {
         font-size: large;
     }
     .modal img {
-        width: 100%;
+        width: 90%;
         margin-left: 0%;
     }
     .modal-content {
@@ -504,7 +504,7 @@ img.hover-shadow {
         width: 60%;
     }
     #video iframe {
-        width: 450px;
-        height: 253px;
+        width: 300px;
+        height: 168px;
     }
 }
