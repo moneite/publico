@@ -514,4 +514,8 @@ img.hover-shadow {
     html {
         overflow-x: hidden!important;
     }
+    .modal {
+        margin-left: 3%;
+        width: 90%;
+    }
 }
