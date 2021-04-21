@@ -511,7 +511,10 @@ img.hover-shadow {
     html {
         overflow-x: hidden!important;
     }
-    .modal {
-        width: 90%;
+    .nav div.logo {
+        float: right;
+    }
+    .navTrigger {
+        margin-right: 80%;
     }
 }

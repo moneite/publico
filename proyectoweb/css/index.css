@@ -321,6 +321,7 @@ a.button:hover {
     }
     .navTrigger {
         display: block;
+        transition: 110ms;
     }
     .nav div.logo {
         margin-left: 15px;
