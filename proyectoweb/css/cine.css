@@ -334,6 +334,12 @@ img.hover-shadow {
     cursor: pointer;
 }
 
+#Lightbox,
+#Lightbox2,
+#Lightbox3 {
+    top: 15px;
+}
+
 @media all and (max-width: 30em) {
     a.button {
         display: block;
