@@ -162,6 +162,52 @@ function showSlide3(n3) {
 
     slides3[slideIndex3 - 1].style.display = 'block';
 };
+//Lightbox5 
+
+let slideIndex5 = 1;
+showSlide5(slideIndex5);
+
+//Lightbox código
+
+function openLightbox5() {
+    document.getElementById('Lightbox5').style.display = 'block';
+};
+
+function closeLightbox5() {
+    document.getElementById('Lightbox5').style.display = 'none';
+};
+
+// Note that you are assigning new values here to our slidIndex.
+
+function changeSlide5(n5) {
+    showSlide5(slideIndex5 += n5);
+};
+
+function toSlide5(n5) {
+    showSlide5(slideIndex5 = n5);
+};
+
+
+
+
+function showSlide5(n5) {
+    const slides5 = document.getElementsByClassName('slide-gallery5');
+
+
+    if (n5 > slides5.length) {
+        slideIndex5 = 1;
+    };
+
+    if (n5 < 1) {
+        slideIndex5 = slides5.length;
+    };
+
+    for (let i = 0; i < slides5.length; i++) {
+        slides5[i].style.display = "none";
+    };
+
+    slides5[slideIndex5 - 1].style.display = 'block';
+};
 
 function overlayOn() {
     document.getElementById("overlayVideo").style.display = "block";
