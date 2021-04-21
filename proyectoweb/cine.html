@@ -75,15 +75,19 @@ fecha: Abril 2021
         <div class="divposterpeli1">
             <div>
                 <p class="myP ">
-                    <span class="ficha"> <b>Año:</b>1981 | <b>Duración:</b> 85 min |<br id="salto"> <b>Título en España: </b>Posesión Infernal<br><b>Reparto Principal: </b> Bruce Campbell | Ellen Sandweiss |<br id="salto"> Betsy Baker | Richard DeManincor  </span>                    <br><br> The Evil Dead es una película de origen estadounidense, dirigida y escrita por Sam Raimi. Está protagonizada por Bruce Campbell y Ellen Sandweiss. Su trama es sencilla, girando en torno a un grupo de jóvenes que decide pasar
+                    <span class="ficha"> <b>Año:</b> 1981 | <b>Duración:</b> 85 min |<br id="salto"> <b>Título en España: </b>Posesión Infernal<br><b>Reparto Principal: </b> Bruce Campbell | Ellen Sandweiss |<br id="salto"> Betsy Baker | Richard DeManincor  </span>                    <br><br> The Evil Dead es una película de origen estadounidense, dirigida y escrita por Sam Raimi. Está protagonizada por Bruce Campbell y Ellen Sandweiss. Su trama es sencilla, girando en torno a un grupo de jóvenes que decide pasar
                     unos días en una cabaña abandonada en el bosque, hasta que despiertan al mal invocándolo a través de los pasajes del Necronomicón. Se considera un icono del cine de terror de serie B y tras su éxito le siguieron dos secuelas. Es la
                     película que comenzó todo el fenómeno de Evil Dead y que a pesar de su mal recibimiento inicial, fue ganando adeptos gracias al "boca a boca" y los videoclubs.
 
                     <br>
                     <br>
-                    <span class="botones"><a href="https://www.youtube.com/watch?v=NL6mioAlpJk&ab_channel=MovieclipsClassicTrailers" target="_blank" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3"onclick="openLightbox();toSlide(1)">+Imágenes 🖼️</a> <a href="#" class="button" id="button4">+Extras ❕</a></span>
+                    <span class="botones"><a onclick= "overlayOn()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3"onclick="openLightbox();toSlide(1)">+Imágenes 🖼️</a> <a href="#" class="button" id="button4">+Extras ❕</a></span>
 
                 </p>
+
+                <div id="overlayVideo" class="overlayVideoGeneral" onclick="overlayOff()">
+                    <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/NL6mioAlpJk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
 
 
                 <div id="Lightbox" class="modal">
@@ -93,13 +97,16 @@ fecha: Abril 2021
                             <img src="./media/promoEV1-1.jpg" class="image-slide-gallery1" alt="Foto promocional de Evil Dead" />
                         </div>
                         <div class="slide-gallery1">
-                            <img src="./media/promoEV1-2.jpg" class="image-slide-gallery1" alt="Un deadite" />
+                            <img src="./media/promoEV1-2.jpg" class="image-slide-gallery1" alt="Foto promocional de Evil Dead" />
                         </div>
                         <div class="slide-gallery1">
-                            <img src="./media/promoEV1-3.jpg" class="image-slide-gallery1" alt="Ash entrando al cobertizo" />
+                            <img src="./media/promoEV1-3.jpg" class="image-slide-gallery1" alt="Foto promocional de Evil Dead" />
                         </div>
                         <div class="slide-gallery1">
-                            <img src="./media/promoEV1-4.jpg" class="image-slide-gallery1" alt="Poster Español Evil Dead" />
+                            <img src="./media/promoEV1-4.jpg" class="image-slide-gallery1" alt="Foto promocional de Evil Dead" />
+                        </div>
+                        <div class="slide-gallery1">
+                            <img src="./media/promoEV1-5.jpg" class="image-slide-gallery1" alt="Poster Evil Dead" />
                         </div>
                         <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
                         <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -109,9 +116,9 @@ fecha: Abril 2021
 
 
             </div>
-            <div>
-                <img id="posterpeli1" src="./media/Evildead1.png" alt="Poster de Evil Dead" data-aos="fade-right">
-            </div>
+
+            <img id="posterpeli1" src="./media/Evildead1.png" alt="Poster de Evil Dead" data-aos="fade-right">
+
         </div>
     </section>
 
@@ -125,28 +132,37 @@ fecha: Abril 2021
             </div>
             <div>
                 <p class="myP2">
-                    <span class="ficha"> <b>Año:</b>1987 | <b>Duración:</b> 86 min |<br id="salto"> <b>Título en España: </b>Terroríficamente Muertos<br><b>Reparto Principal: </b> Bruce Campbell | Sarah Berry |<br id="salto"> Dan Hicks | Ted Raimi | Theresa Tilly | Bob Dorian </span>                    <br><br> Evil Dead 2 es la segunda película de la saga, dirigida de nuevo por Sam Raimi y protagonizada por el polifacético Bruce Campbell. Podría decirse que es un remake de la primera parte añadiendo más comedia, más gore, más acción
+                    <span class="ficha"> <b>Año:</b> 1987 | <b>Duración:</b> 86 min |<br id="salto"> <b>Título en España: </b>Terroríficamente Muertos<br><b>Reparto Principal: </b> Bruce Campbell | Sarah Berry |<br id="salto"> Dan Hicks | Ted Raimi | Theresa Tilly | Bob Dorian </span>                    <br><br> Evil Dead 2 es la segunda película de la saga, dirigida de nuevo por Sam Raimi y protagonizada por el polifacético Bruce Campbell. Podría decirse que es un remake de la primera parte añadiendo más comedia, más gore, más acción
                     y por supuesto, más presupuesto. Durante esta secuela el Necronomicón Ex Mortis, o libro de los muertos, vuelve a ser el culpable de liberar el mal y de convertir a los amigos de Ash en demonios (deadites). En esta película se forma
                     del todo el personaje de Ash Williams ya que es aquí donde coge por primera vez la sierra mecánica. Por otra parte, el filme cuenta con un final abierto y perfectamente continuado en su tercera entrega.
 
                     <br>
                     <br>
-                    <span class="botones"><a href="https://youtu.be/s7WNgzilRBw" target="_blank" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox2();toSlide2(1)">+Imágenes 🖼️</a> <a href="#" class="button" id="button4">+Extras ❕</a></span>
+                    <span class="botones"><a onclick= "overlayOn2()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox2();toSlide2(1)">+Imágenes 🖼️</a> <a href="#" class="button" id="button4">+Extras ❕</a></span>
                 </p>
+
+                <div id="overlayVideo2" class="overlayVideoGeneral" onclick="overlayOff2()">
+                    <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/s7WNgzilRBw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+
                 <div id="Lightbox2" class="modal">
                     <span class="close pointer" onclick="closeLightbox2()">&times;</span>
                     <div class="modal-content" id="light2">
                         <div class="slide-gallery2">
-                            <img src="./media/promoEV2-1.jpg" class="image-slide-gallery2" alt="promo evil dead 2" />
+                            <img src="./media/promoEV2-1.jpg" class="image-slide-gallery2" alt="Foto promocional de Evil Dead 2" />
                         </div>
                         <div class="slide-gallery2">
-                            <img src="./media/promoEV2-2.jpg" class="image-slide-gallery2" alt="fotograma evil dead 2" />
+                            <img src="./media/promoEV2-2.jpg" class="image-slide-gallery2" alt="Foto promocional de Evil Dead 2" />
                         </div>
                         <div class="slide-gallery2">
-                            <img src="./media/promoEV2-3.jpg" class="image-slide-gallery2" alt="Ash ensangrentado" />
+                            <img src="./media/promoEV2-3.jpg" class="image-slide-gallery2" alt="Foto promocional de Evil Dead 2" />
                         </div>
                         <div class="slide-gallery2">
-                            <img src="./media/promoEV2-4.jpg" class="image-slide-gallery2" alt="la mano de evil dead 2" />
+                            <img src="./media/promoEV2-4.jpg" class="image-slide-gallery2" alt="Foto promocional de Evil Dead 2" />
+                        </div>
+
+                        <div class="slide-gallery2">
+                            <img src="./media/promoEV2-5.jpg" class="image-slide-gallery2" alt="Poster de Evil Dead 2" />
                         </div>
 
                         <a class="previous" onclick="changeSlide2(-1)">&#10094;</a>
@@ -168,10 +184,74 @@ fecha: Abril 2021
         </div>
     </section>
 
+
+    <section class="home " id="peli3">
+        <div class="divlogopeli3">
+            <img id="logopeli3" src="./media/army-of-darkness-logo.png" alt="Logo primera pelicula" data-aos="zoom-in">
+        </div>
+        <div class="divposterpeli3">
+            <div>
+                <img id="evilash" src="./media/EvilAshArmyOfDarkness.png" alt="Poster de Evil Dead" data-aos="fade-right">
+            </div>
+            <div>
+                <p class="myP2">
+                    <span class="ficha"> <b>Año:</b>1992 | <b>Duración:</b> 89 min |<br id="salto"> <b>Título en España: </b>El Ejército de las Tinieblas<br><b>Reparto Principal: </b> Bruce Campbell | Embeth Davidtz |<br id="salto"> Marcus Gilbert | Ian Abercrombie | Richard Grove </span>
+                    <br><br> Army Of Darkness es la tercera entrega de la saga aparecida en el año 1992. En esta ocasión la acción se retoma al final de la segunda entrega, tras el viaje realizado en el tiempo por parte de Ash al tratar de devolver las
+                    fuerzas del mal a su origen. Por ello, gran parte de la cinta está ambientada en el año 1300, creando así anacronismos propios de la convivencia de una persona del siglo XX en la sociedad del S.XIV. Está entrega abandona en su totalidad
+                    el terror para centrarse en la comedia, la fantasía y la acción.
+                    <br>
+                    <br>
+                    <span class="botones"><a onclick="overlayOn3()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox3();toSlide3(1)">+Imágenes 🖼️</a> <a href="#" class="button" id="button4">+Extras ❕</a></span>
+                </p>
+                <div id="overlayVideo3" class="overlayVideoGeneral" onclick="overlayOff3()">
+                    <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/UHZQEtG8xYo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+            </div>
+            <div id="Lightbox3" class="modal">
+                <span class="close pointer" onclick="closeLightbox3()">&times;</span>
+                <div class="modal-content" id="light3">
+                    <div class="slide-gallery3">
+                        <img src="./media/promoEV3-1.jpg" class="image-slide-gallery3" alt="Foto promocional Army of Darkness" />
+                    </div>
+                    <div class="slide-gallery3">
+                        <img src="./media/promoEV3-2.jpg" class="image-slide-gallery3" alt="Foto promocional Army of Darkness" />
+                    </div>
+                    <div class="slide-gallery3">
+                        <img src="./media/promoEV3-3.jpg" class="image-slide-gallery3" alt="Foto promocional Army of Darkness" />
+                    </div>
+                    <div class="slide-gallery3">
+                        <img src="./media/promoEV3-4.jpg" class="image-slide-gallery3" alt="Foto promocional Army of Darkness" />
+                    </div>
+                    <div class="slide-gallery3">
+                        <img src="./media/promoEV3-5.jpg" class="image-slide-gallery3" alt="Poster Army of Darkness" />
+                    </div>
+
+                    <a class="previous" onclick="changeSlide3(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide3(1)">&#10095;</a>
+
+
+                </div>
+            </div>
+
+            <div class="divash">
+                <img id="ashPintado" src="./media/AshArmyOfDarkness.png" alt="Ash en army of darkness" data-aos="fade-right">
+            </div>
+
+
+
+
+        </div>
+        <div id="divmovil3">
+            <img class="posterpeli3movil" id="evilashmovil" src="./media/EvilAshArmyOfDarkness.png" alt="Poster de Evil Dead" data-aos="fade-right">
+            <img class="posterpeli3movil" id="ashPintadoMovil" src="./media/AshArmyOfDarkness.png" alt="Poster de Evil Dead" data-aos="fade-left">
+        </div>
+    </section>
+
+
     <footer>
         <div class="footer">
             <div class="row">
-                <p>Miguel Ángel Arcos Copyright © 2021 - All rights reserved || Designed By: Moneite</p>
+                <p>Miguel Ángel Arcos Copyright © 2021 - CENEC 1º DAM - Proyecto Web</p>
                 <a href="https://cutt.ly/Vvu2NcD" target="_blank"><img class="ytnormal" src="./media/youtube-logo.png" alt="Logo Youtube" height="30px"></a>
                 <a href="https://twitter.com/EvilDead" target="_blank"><img class="twnormal" src="./media/Twitter-Logo.png" alt="Logo Twitter" height="30px"></a>
                 <a href="https://www.instagram.com/ashvsevildead/?hl=es" target="_blank"><img class="ignormal" src="./media/instagram-logo.png" alt="Logo instagram" height="30px"></a>

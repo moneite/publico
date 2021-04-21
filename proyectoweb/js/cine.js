@@ -20,6 +20,7 @@ AOS.init({
 });
 
 
+//Lightbox1
 
 let slideIndex = 1;
 showSlide(slideIndex);
@@ -28,7 +29,7 @@ showSlide(slideIndex);
 
 function openLightbox() {
     document.getElementById('Lightbox').style.display = 'block';
-}
+};
 
 function closeLightbox() {
     document.getElementById('Lightbox').style.display = 'none';
@@ -49,8 +50,6 @@ function toSlide(n) {
 
 function showSlide(n) {
     const slides = document.getElementsByClassName('slide-gallery1');
-    let modalPreviews = document.getElementsByClassName('modal-content');
-
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -64,23 +63,27 @@ function showSlide(n) {
         slides[i].style.display = "none";
     };
 
-    for (let i = 0; i < modalPreviews.length; i++) {
-        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-    };
-
     slides[slideIndex - 1].style.display = 'block';
-    modalPreviews[slideIndex - 1].className += ' active';
 };
 
+//LightbOX2
+
+let slideIndex2 = 1;
 showSlide2(slideIndex2);
+
+//Lightbox código
 
 function openLightbox2() {
     document.getElementById('Lightbox2').style.display = 'block';
-}
+};
 
 function closeLightbox2() {
     document.getElementById('Lightbox2').style.display = 'none';
 };
+
+
+
+// Note that you are assigning new values here to our slidIndex.
 
 function changeSlide2(n2) {
     showSlide2(slideIndex2 += n2);
@@ -90,9 +93,11 @@ function toSlide2(n2) {
     showSlide2(slideIndex2 = n2);
 };
 
+
+
+
 function showSlide2(n2) {
     const slides2 = document.getElementsByClassName('slide-gallery2');
-    let modalPreviews2 = document.getElementsByClassName("#light2");
 
 
     if (n2 > slides2.length) {
@@ -107,10 +112,77 @@ function showSlide2(n2) {
         slides2[i].style.display = "none";
     };
 
-    for (let i = 0; i < modalPreviews2.length; i++) {
-        modalPreviews2[i].className = modalPreviews2[i].className.replace(' active', '');
+    slides2[slideIndex2 - 1].style.display = 'block';
+};
+
+
+//LightbOX3
+
+let slideIndex3 = 1;
+showSlide3(slideIndex3);
+
+//Lightbox código
+
+function openLightbox3() {
+    document.getElementById('Lightbox3').style.display = 'block';
+};
+
+function closeLightbox3() {
+    document.getElementById('Lightbox3').style.display = 'none';
+};
+
+// Note that you are assigning new values here to our slidIndex.
+
+function changeSlide3(n3) {
+    showSlide3(slideIndex3 += n3);
+};
+
+function toSlide3(n3) {
+    showSlide3(slideIndex3 = n3);
+};
+
+
+
+
+function showSlide3(n3) {
+    const slides3 = document.getElementsByClassName('slide-gallery3');
+
+
+    if (n3 > slides3.length) {
+        slideIndex3 = 1;
     };
 
-    slides2[slideIndex2 - 1].style.display = 'block';
-    modalPreviews2[slideIndex2 - 1].className += ' active';
+    if (n3 < 1) {
+        slideIndex3 = slides3.length;
+    };
+
+    for (let i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none";
+    };
+
+    slides3[slideIndex3 - 1].style.display = 'block';
 };
+
+function overlayOn() {
+    document.getElementById("overlayVideo").style.display = "block";
+}
+
+function overlayOff() {
+    document.getElementById("overlayVideo").style.display = "none";
+}
+
+function overlayOn2() {
+    document.getElementById("overlayVideo2").style.display = "block";
+}
+
+function overlayOff2() {
+    document.getElementById("overlayVideo2").style.display = "none";
+}
+
+function overlayOn3() {
+    document.getElementById("overlayVideo3").style.display = "block";
+}
+
+function overlayOff3() {
+    document.getElementById("overlayVideo3").style.display = "none";
+}
