@@ -1,2 +1,2 @@
-# trabajoT2
- Trabajo Integrador del Segundo Trimestre - Miguel Angel Arcos Reyes
+# proyectoWeb
+ Trabajo Integrador del Tercer Trimestre - Miguel Angel Arcos Reyes
