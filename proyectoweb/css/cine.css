@@ -176,10 +176,6 @@
     font-size: smaller;
 }
 
-#salto {
-    display: none;
-}
-
 .modal {
     display: none;
     position: fixed;
