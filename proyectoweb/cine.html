@@ -59,8 +59,13 @@ fecha: Abril 2021
                     <li>
                         <a href="# "><img id="cabaña" src="./media/cabaña.png " alt="Cabaña de Evil Dead">Influencia</a>
                     </li>
-                    <li>
-                        <a href="login.html"><img id="login" src="./media/login.png " alt="icono de login"></a>
+                    <li id="loginOculto">
+                        <a href="login.html"><img id="login" class="loginIcono" src="./media/login.png " alt="icono de login"></a>
+                    </li>
+                    <div id="conectado"></div>
+
+                    <li id="logOutTxt">
+                        <a onclick="cerrarSesion()"><img id="logout" class="loginIcono" src="./media/logout.png " alt="icono de logout"></a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +85,8 @@ fecha: Abril 2021
         <div class="divposterpeli1">
             <div>
                 <p class="myP ">
-                    <span class="ficha"> <b>Año:</b> 1981 | <b>Duración:</b> 85 min |<br id="salto"> <b>Título en España: </b>Posesión Infernal<br><b>Reparto Principal: </b> Bruce Campbell | Ellen Sandweiss | Betsy Baker | Richard DeManincor  </span>            <br><br> The Evil Dead es una película de origen estadounidense, dirigida y escrita por Sam Raimi. Está protagonizada por Bruce Campbell y Ellen Sandweiss. Su trama es sencilla, girando en torno a un grupo de jóvenes que decide pasar unos
+                    <span class="ficha"> <b>Año:</b> 1981 | <b>Duración:</b> 85 min |<br id="salto"> <b>Título en España: </b>Posesión Infernal<br><b>Reparto Principal: </b> Bruce Campbell | Ellen Sandweiss | Betsy Baker | Richard DeManincor  </span>
+            <br><br> The Evil Dead es una película de origen estadounidense, dirigida y escrita por Sam Raimi. Está protagonizada por Bruce Campbell y Ellen Sandweiss. Su trama es sencilla, girando en torno a un grupo de jóvenes que decide pasar unos
             días en una cabaña abandonada en el bosque, hasta que despiertan al mal invocándolo a través de los pasajes del Necronomicón. Se considera un icono del cine de terror de serie B y tras su éxito le siguieron dos secuelas. Es la película que
             comenzó todo el fenómeno de Evil Dead y que a pesar de su mal recibimiento inicial, fue ganando adeptos gracias al "boca a boca" y los videoclubs.
 
@@ -336,7 +342,9 @@ fecha: Abril 2021
 
             </div>
         </footer>
+        <script src="./js/login.js"></script>
         <script src="./js/cine.js"></script>
+
 </body>
 
 </html>

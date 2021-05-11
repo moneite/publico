@@ -57,8 +57,13 @@ fecha: Abril 2021
                     <li>
                         <a href="# "><img id="cabaña" src="./media/cabaña.png " alt="Cabaña de Evil Dead">Influencia</a>
                     </li>
-                    <li>
-                        <a href="login.html"><img id="login" src="./media/login.png " alt="icono de login"></a>
+                    <li id="loginOculto">
+                        <a href="login.html"><img id="login" class="loginIcono" src="./media/login.png " alt="icono de login"></a>
+                    </li>
+                    <div id="conectado"></div>
+
+                    <li id="logOutTxt">
+                        <a onclick="cerrarSesion()"><img id="logout" class="loginIcono" src="./media/logout.png " alt="icono de logout"></a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +107,11 @@ fecha: Abril 2021
 
         </div>
     </footer>
+    <script src="./js/login.js"></script>
     <script src="./js/index.js"></script>
+
+
+
 </body>
 
 </html>
