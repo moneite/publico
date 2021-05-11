@@ -96,6 +96,33 @@ body {
     background-size: cover
 }
 
+#volverInicio:hover {
+    color: red;
+}
+
+.btn {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: black;
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    font-weight: bold;
+    background-color: rgb(190, 43, 43);
+    color: black;
+    font-size: 2em;
+}
+
 @keyframes chbg {
     0% {
         background: url(../media/backgroundLogin/bg1login.jpg);

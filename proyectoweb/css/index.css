@@ -218,6 +218,15 @@ body {
     height: 35px;
 }
 
+#login {
+    display: inline !important;
+    height: 50px;
+}
+
+#login:hover {
+    content: url('../media/login-rojo.png')
+}
+
 #logoGrande {
     display: block;
     margin: auto;
@@ -298,6 +307,10 @@ a.button:hover {
 
 .ignormal:hover {
     content: url('../media/instagram-logo-sangre.png');
+}
+
+#linkedin {
+    color: #fff;
 }
 
 @media all and (max-width: 30em) {

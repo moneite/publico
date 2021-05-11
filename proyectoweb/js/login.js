@@ -8,7 +8,7 @@ function leerXML() {
             miFuncion(this);
         }
     };
-    xhr.open("GET", "registrados.xml", true);
+    xhr.open("GET", "https://github.com/moneite/publico/blob/main/proyectoweb/registrados.xml", true);
     xhr.send();
 
 }
