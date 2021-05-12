@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+.home {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 45em 0 #000;
+    background: url('../media/bgcomics.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300PX;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: "Luckiest Guy", cursive;
+}
+
+#divh1 {
+    width: 100%;
+    height: fit-content;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 8em;
+    padding: 0;
+    color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+h1 span {
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+h1 span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+h1 span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+@keyframes bop {
+    0% {
+        transform: scale(0.9);
+    }
+    50%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bopB {
+    0% {
+        transform: scale(0.9);
+    }
+    80%,
+    100% {
+        transform: scale(1) rotateZ(-3deg);
+    }
+}
+
+.comics {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    margin: auto;
+    z-index: -20;
+}
+
+.comics img {
+    width: 13%;
+    padding-left: 5%;
+    transform: rotate(-20deg);
+    filter: grayscale(95%);
+    transition: 200ms;
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.comics img:hover {
+    filter: grayscale(0%);
+    transform: rotate(0deg);
+    transition: 900ms;
+    animation: img 4s infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+@keyframes img {
+    0% {
+        transform: skew(1deg);
+        content: url('../media/comics/marvel_zombies2.png')
+    }
+    25% {
+        transform: skew(-1deg);
+        content: url('../media/comics/marvel_zombies3.png')
+    }
+    50% {
+        transform: skew(1deg);
+        content: url('../media/comics/marvel_zombies4.png')
+    }
+    75% {
+        transform: skew(-1deg);
+        content: url('../media/comics/marvel_zombies5.png')
+    }
+    100% {
+        transform: skew(1deg);
+        content: url('../media/comics/marvel_zombies6.png')
+    }
+}
+
+@media screen and (max-width:968px) {
+    h1 {
+        padding-top: 60px;
+        font-size: 60px;
+    }
+    .home {
+        background-size: cover;
+    }
+}
