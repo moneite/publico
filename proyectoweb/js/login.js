@@ -73,7 +73,7 @@ function miFuncion(xml) {
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
         window.history.go(-1);
-        window.reload();
+        location.reload();
     } else {
         window.alert("Usuario o contraseña incorrectos");
     }
