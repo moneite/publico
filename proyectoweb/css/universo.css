@@ -73,7 +73,7 @@ h1 span:last-child {
     width: 13%;
     padding-left: 5%;
     transform: rotate(-20deg);
-    filter: grayscale(95%);
+    filter: grayscale(90%);
     transition: 200ms;
     animation: shake 2s infinite;
     animation-direction: alternate;
@@ -88,35 +88,59 @@ h1 span:last-child {
     }
 }
 
-.comics img:hover {
+.comics #ArmyVsMarvel:hover {
     filter: grayscale(0%);
     transform: rotate(0deg);
-    transition: 900ms;
-    animation: img 4s infinite;
-    animation-duration: 3s;
+    animation: imgAvsM 5s linear infinite;
     animation-direction: alternate;
 }
 
-@keyframes img {
+@keyframes imgAvsM {
     0% {
-        transform: skew(1deg);
-        content: url('../media/comics/marvel_zombies2.png')
+        transform: skew(1deg) scale(1.1);
+        content: url('../media/comics/marvel_zombies2.png');
     }
     25% {
-        transform: skew(-1deg);
-        content: url('../media/comics/marvel_zombies3.png')
+        transform: skew(-1deg) scale(1.1);
+        content: url('../media/comics/marvel_zombies3.png');
     }
     50% {
-        transform: skew(1deg);
-        content: url('../media/comics/marvel_zombies4.png')
+        transform: skew(1deg) scale(1.1);
+        content: url('../media/comics/marvel_zombies4.png');
     }
     75% {
-        transform: skew(-1deg);
-        content: url('../media/comics/marvel_zombies5.png')
+        transform: skew(-1deg) scale(1.1);
+        content: url('../media/comics/marvel_zombies5.png');
     }
     100% {
-        transform: skew(1deg);
-        content: url('../media/comics/marvel_zombies6.png')
+        transform: skew(1deg) scale(1.1);
+        content: url('../media/comics/marvel_zombies6.png');
+    }
+}
+
+.comics #A2A:hover {
+    filter: grayscale(0%);
+    transform: rotate(0deg);
+    animation: imgA2A 4s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes imgA2A {
+    0% {
+        transform: skew(1deg) scale(1.1);
+        content: url('../media/comics/A2A1.png');
+    }
+    33% {
+        transform: skew(-1deg) scale(1.1);
+        content: url('../media/comics/A2A2.png');
+    }
+    66% {
+        transform: skew(1deg) scale(1.1);
+        content: url('../media/comics/A2A3.png');
+    }
+    100% {
+        transform: skew(-1deg) scale(1.1);
+        content: url('../media/comics/A2A4.png');
     }
 }
 
@@ -127,5 +151,17 @@ h1 span:last-child {
     }
     .home {
         background-size: cover;
+    }
+    .comics {
+        display: block;
+    }
+    .comics img {
+        width: 40%;
+        padding-left: 5%;
+        transform: rotate(-20deg);
+        filter: grayscale(90%);
+        transition: 200ms;
+        animation: shake 2s infinite;
+        animation-direction: alternate;
     }
 }
