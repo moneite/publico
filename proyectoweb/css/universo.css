@@ -74,160 +74,124 @@ h1 span:last-child {
     transform: rotate(-20deg);
     filter: grayscale(80%);
     transition: 200ms;
-    animation: shake 2s infinite;
-    animation-direction: alternate;
 }
 
-@keyframes shake {
-    0% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
+.comics img:hover {
+    transform: rotate(0deg);
+    transform: scale(1.2);
 }
 
 .comics #ArmyVsMarvel:hover {
     filter: grayscale(0%);
-    transform: rotate(0deg);
     animation: imgAvsM 4s linear infinite alternate;
 }
 
 @keyframes imgAvsM {
     0% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/marvel_zombies2.png');
     }
     25% {
-        transform: scale(1.2);
         content: url('../media/comics/marvel_zombies3.png');
     }
     50% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/marvel_zombies4.png');
     }
     75% {
-        transform: scale(1.2);
         content: url('../media/comics/marvel_zombies5.png');
     }
     100% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/marvel_zombies6.png');
     }
 }
 
 .comics #A2A:hover {
     filter: grayscale(0%);
-    transform: rotate(0deg);
     animation: imgA2A 3s linear infinite alternate;
 }
 
 @keyframes imgA2A {
     0% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/A2A1.png');
     }
     33% {
-        transform: scale(1.2);
         content: url('../media/comics/A2A2.png');
     }
     66% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/A2A3.png');
     }
     100% {
-        transform: scale(1.2);
         content: url('../media/comics/A2A4.png');
     }
 }
 
 .comics #FTA:hover {
     filter: grayscale(0%);
-    transform: rotate(0deg);
     animation: imgfta 3s linear infinite alternate;
 }
 
 @keyframes imgfta {
     0% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/FTA1.png');
     }
     33% {
-        transform: scale(1.2);
         content: url('../media/comics/FTA2.png');
     }
     66% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/FTA3.png');
     }
     100% {
-        transform: scale(1.2);
         content: url('../media/comics/FTA4.png');
     }
 }
 
 .comics #TLR:hover {
     filter: grayscale(0%);
-    transform: rotate(0deg);
     animation: imgtlr 3s linear infinite alternate;
 }
 
 @keyframes imgtlr {
     0% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/TLR1.png');
     }
     33% {
-        transform: scale(1.2);
         content: url('../media/comics/TLR2.png');
     }
     66% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/TLR3.png');
     }
     100% {
-        transform: scale(1.2);
         content: url('../media/comics/TLR4.png');
     }
 }
 
 .comics #ATA:hover {
     filter: grayscale(0%);
-    transform: rotate(0deg);
     animation: atatlr 4s linear infinite alternate;
 }
 
 @keyframes atatlr {
     0% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/ATA1.png');
     }
     15% {
-        transform: scale(1.2);
         content: url('../media/comics/ATA2.png');
     }
     30% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/ATA3.png');
     }
     45% {
-        transform: scale(1.2);
         content: url('../media/comics/ATA4.png');
     }
     60% {
-        transform: skew(1deg) scale(1.2);
         content: url('../media/comics/ATA5.png');
     }
     75% {
-        transform: scale(1.2);
         content: url('../media/comics/ATA6.png');
     }
     90% {
-        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/ATA7.png');
     }
     100% {
-        transform: scale(1.2);
         content: url('../media/comics/ATA8.png');
     }
 }
@@ -249,7 +213,8 @@ h1 span:last-child {
         transform: rotate(-20deg);
         filter: grayscale(90%);
         transition: 200ms;
-        animation: shake 2s infinite;
-        animation-direction: alternate;
+    }
+    .comics img:hover {
+        transform: rotate(0deg);
     }
 }
