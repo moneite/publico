@@ -1,5 +1,4 @@
 window.onload = function comprobarLogin() {
-    location.reload();
     if (sessionStorage.getItem("user").length > 0) {
         $('#loginOculto').css('display', 'none');
         $('#logout').css('display', 'inline-block');
