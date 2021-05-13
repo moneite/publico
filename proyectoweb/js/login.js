@@ -1,5 +1,5 @@
 window.onload = function comprobarLogin() {
-
+    location.reload();
     if (sessionStorage.getItem("user").length > 0) {
         $('#loginOculto').css('display', 'none');
         $('#logout').css('display', 'inline-block');
@@ -73,7 +73,7 @@ function miFuncion(xml) {
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
         window.history.go(-1);
-        location.reload();
+
     } else {
         window.alert("Usuario o contraseña incorrectos");
     }
