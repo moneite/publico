@@ -72,7 +72,7 @@ h1 span:last-child {
     width: 13%;
     padding-left: 5%;
     transform: rotate(-20deg);
-    filter: grayscale(90%);
+    filter: grayscale(80%);
     transition: 200ms;
     animation: shake 2s infinite;
     animation-direction: alternate;
@@ -99,15 +99,15 @@ h1 span:last-child {
         content: url('../media/comics/marvel_zombies2.png');
     }
     25% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/marvel_zombies3.png');
     }
     50% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/marvel_zombies4.png');
     }
     75% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/marvel_zombies5.png');
     }
     100% {
@@ -128,15 +128,15 @@ h1 span:last-child {
         content: url('../media/comics/A2A1.png');
     }
     33% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/A2A2.png');
     }
     66% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/A2A3.png');
     }
     100% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/A2A4.png');
     }
 }
@@ -153,15 +153,15 @@ h1 span:last-child {
         content: url('../media/comics/FTA1.png');
     }
     33% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/FTA2.png');
     }
     66% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/FTA3.png');
     }
     100% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/FTA4.png');
     }
 }
@@ -178,15 +178,15 @@ h1 span:last-child {
         content: url('../media/comics/TLR1.png');
     }
     33% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/TLR2.png');
     }
     66% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/TLR3.png');
     }
     100% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/TLR4.png');
     }
 }
@@ -203,15 +203,15 @@ h1 span:last-child {
         content: url('../media/comics/ATA1.png');
     }
     15% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/ATA2.png');
     }
     30% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/ATA3.png');
     }
     45% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/ATA4.png');
     }
     60% {
@@ -219,15 +219,15 @@ h1 span:last-child {
         content: url('../media/comics/ATA5.png');
     }
     75% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/ATA6.png');
     }
     90% {
-        transform: skew(1deg) scale(1.2);
+        transform: skew(-1deg) scale(1.2);
         content: url('../media/comics/ATA7.png');
     }
     100% {
-        transform: skew(-1deg) scale(1.2);
+        transform: scale(1.2);
         content: url('../media/comics/ATA8.png');
     }
 }
