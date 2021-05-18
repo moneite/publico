@@ -329,7 +329,8 @@ a.button:hover {
 }
 
 .dollynormal:hover {
-    content: url('../media/DOLLY-logo2.png')
+    content: url('../media/DOLLY-logo2.png');
+    transform: scale(1.2);
 }
 
 #linkedin {
