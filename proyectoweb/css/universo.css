@@ -1,170 +1,306 @@
-@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
-.home {
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 45em 0 #000;
-    background: url('../media/bgcomics.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 300PX;
-    overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
-    font-family: "Luckiest Guy", cursive;
-}
-
-#divh1 {
-    width: 100%;
-    height: fit-content;
-}
-
-h1 {
-    font-family: "Luckiest Guy", cursive;
-    text-align: center;
-    margin: 0;
-    font-size: 8em;
-    padding: 0;
-    color: white;
-    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
-}
-
-h1 span {
-    transform: scale(0.9);
-    display: inline-block;
-}
-
-h1 span:first-child {
-    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
-}
-
-h1 span:last-child {
-    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
-}
-
-@keyframes bop {
-    0% {
-        transform: scale(0.9);
-    }
-    50%,
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes bopB {
-    0% {
-        transform: scale(0.9);
-    }
-    80%,
-    100% {
-        transform: scale(1) rotateZ(-3deg);
-    }
-}
-
-.comics {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 100%;
-    margin: auto;
-}
-
-.comics img {
-    width: 13%;
-    padding-left: 5%;
-    transform: rotate(-20deg);
-    filter: grayscale(80%);
-}
-
-.comics #ArmyVsMarvel:hover {
-    filter: grayscale(0%);
-    animation: imgAvsM 4s linear infinite alternate;
-    content: url('../media/comics/marvelZombies.gif');
-}
-
-@keyframes imgAvsM {
-    0% {
-        transform: skew(1deg) scale(1.2);
-    }
-    25% {
-        transform: skew(-1deg);
-    }
-    50% {
-        transform: skew(1deg) scale(1.2);
-    }
-    75% {
-        transform: skew(-1deg);
-    }
-    100% {
-        transform: skew(1deg) scale(1.2);
-    }
-}
-
-.comics #A2A:hover {
-    filter: grayscale(0%);
-    animation: imgAvsM 3s linear infinite alternate;
-    content: url('../media/comics/A2A.gif');
-}
-
-.comics #FTA:hover {
-    filter: grayscale(0%);
-    animation: imgAvsM 3s linear infinite alternate;
-    content: url('../media/comics/FTA.gif');
-}
-
-.comics #TLR:hover {
-    filter: grayscale(0%);
-    animation: imgAvsM 3s linear infinite alternate;
-    content: url('../media/comics/TLR.gif');
-}
-
-.comics #ATA:hover {
-    filter: grayscale(0%);
-    animation: atatlr 6s linear infinite alternate;
-    content: url('../media/comics/ATA.gif');
-}
-
-@keyframes atatlr {
-    0% {
-        transform: skew(1deg) scale(1.2);
-    }
-    15% {
-        transform: skew(-1deg);
-    }
-    30% {
-        transform: skew(1deg) scale(1.2);
-    }
-    45% {
-        transform: skew(-1deg);
-    }
-    60% {
-        transform: skew(1deg) scale(1.2);
-    }
-    75% {
-        transform: skew(-1deg);
-    }
-    90% {
-        transform: skew(1deg) scale(1.2);
-    }
-    100% {
-        transform: skew(-1deg);
-    }
-}
-
-@media screen and (max-width:968px) {
-    h1 {
-        padding-top: 60px;
-        font-size: 60px;
-    }
+    @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,400;1,500&family=Bebas+Neue&display=swap');
     .home {
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 45em 0 #000;
+        background: url('../media/bgcomics.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 300PX;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #videojuegos {
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 45em 0 #000;
+        background: url('../media/bgcomics.png');
         background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 300PX;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
     }
+    
+    #divh1 {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #divVideojuegos {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    h1 {
+        font-family: "Luckiest Guy", cursive;
+        text-align: center;
+        margin: 0;
+        font-size: 8em;
+        padding: 0;
+        color: white;
+        vertical-align: center;
+        text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+    }
+    
+    h1 span {
+        transform: scale(0.9);
+        display: inline-block;
+    }
+    
+    h1 span:first-child {
+        animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+    }
+    
+    h1 span:last-child {
+        animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+    }
+    
+    #divVideojuegos h1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        text-align: center;
+        margin: 0;
+        font-size: 8em;
+        padding: 0;
+        color: white;
+        text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+    }
+    
+    @keyframes bop {
+        0% {
+            transform: scale(0.9);
+        }
+        50%,
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes bopB {
+        0% {
+            transform: scale(0.9);
+        }
+        80%,
+        100% {
+            transform: scale(1) rotateZ(-3deg);
+        }
+    }
+    
     .comics {
-        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        margin: auto;
     }
+    
     .comics img {
-        width: 40%;
+        width: 13%;
         padding-left: 5%;
-        filter: grayscale(90%);
-        transform: rotate(0deg);
+        transform: rotate(-20deg);
+        filter: grayscale(80%);
     }
-}
+    
+    .comics #ArmyVsMarvel:hover {
+        filter: grayscale(0%);
+        animation: imgAvsM 4s linear infinite alternate;
+        content: url('../media/comics/marvelZombies.gif');
+    }
+    
+    @keyframes imgAvsM {
+        0% {
+            transform: skew(1deg) scale(1.2);
+        }
+        25% {
+            transform: skew(-1deg);
+        }
+        50% {
+            transform: skew(1deg) scale(1.2);
+        }
+        75% {
+            transform: skew(-1deg);
+        }
+        100% {
+            transform: skew(1deg) scale(1.2);
+        }
+    }
+    
+    .comics #A2A:hover {
+        filter: grayscale(0%);
+        animation: imgAvsM 3s linear infinite alternate;
+        content: url('../media/comics/A2A.gif');
+    }
+    
+    .comics #FTA:hover {
+        filter: grayscale(0%);
+        animation: imgAvsM 3s linear infinite alternate;
+        content: url('../media/comics/FTA.gif');
+    }
+    
+    .comics #TLR:hover {
+        filter: grayscale(0%);
+        animation: imgAvsM 3s linear infinite alternate;
+        content: url('../media/comics/TLR.gif');
+    }
+    
+    .comics #ATA:hover {
+        filter: grayscale(0%);
+        animation: atatlr 6s linear infinite alternate;
+        content: url('../media/comics/ATA.gif');
+    }
+    
+    @keyframes atatlr {
+        0% {
+            transform: skew(1deg) scale(1.2);
+        }
+        15% {
+            transform: skew(-1deg);
+        }
+        30% {
+            transform: skew(1deg) scale(1.2);
+        }
+        45% {
+            transform: skew(-1deg);
+        }
+        60% {
+            transform: skew(1deg) scale(1.2);
+        }
+        75% {
+            transform: skew(-1deg);
+        }
+        90% {
+            transform: skew(1deg) scale(1.2);
+        }
+        100% {
+            transform: skew(-1deg);
+        }
+    }
+    
+    #fichaJuego {
+        display: flex;
+        padding-left: 2%;
+        padding-right: 5%;
+        background: url('../media/evildeadc64.gif');
+        background-position-x: 98%;
+        background-repeat: no-repeat;
+    }
+    
+    #fichaJuego2 {
+        display: flex;
+        padding-left: 2%;
+        padding-right: 5%;
+        background: url('../media/evildeadc64.gif');
+        background-position-x: 70%;
+        background-repeat: no-repeat;
+    }
+    
+    #textoFicha {
+        font-size: 20px;
+    }
+    
+    #textoFicha h2 {
+        padding-left: 3%;
+        font-size: 45px;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(255, 28, 28);
+    }
+    
+    #textoFicha p {
+        padding-left: 3%;
+    }
+    
+    #textoFicha a {
+        color: white;
+    }
+    
+    .tituloderecha h2 {
+        padding-right: 2%;
+    }
+    
+    .tituloderecha p {
+        text-align: left;
+        padding-right: 2%;
+    }
+    
+    #portadaC64 {
+        width: 30%;
+        height: auto;
+    }
+    
+    #portadaC64:hover {
+        content: url('../media/videojuegos/evil_dead_c64.png');
+        animation: c64 linear infinite 4s alternate;
+    }
+    
+    #portadapsx {
+        width: 25%;
+    }
+    
+    #portadapsx:hover {
+        content: url('../media/videojuegos/evil_dead_psx.png');
+        animation: c64 linear infinite 4s alternate;
+    }
+    
+    #videoMovil {
+        display: none;
+    }
+    
+    #brMovilVisible {
+        display: none;
+    }
+    
+    @keyframes c64 {
+        0% {}
+        100% {
+            transform: scale(1.1);
+        }
+    }
+    
+    @media screen and (max-width:968px) {
+        #TLR {
+            display: block;
+            margin: auto;
+        }
+        h1 {
+            padding-top: 60px;
+            font-size: 60px;
+        }
+        .home {
+            background-size: cover;
+        }
+        .comics {
+            display: block;
+            overflow-y: hidden;
+        }
+        .comics img {
+            width: 40%;
+            padding-left: 5%;
+            filter: grayscale(90%);
+            transform: rotate(0deg);
+        }
+        #fichaJuego {
+            display: block;
+            background: none;
+        }
+        #portadaC64 {
+            margin: auto;
+            display: block;
+        }
+        #textoFicha h2 {
+            text-align: center;
+        }
+        #videoMovil {
+            display: block;
+            width: 90%;
+            margin: auto;
+        }
+        #brMovil {
+            display: none;
+        }
+        #brMovilVisible {
+            display: block;
+        }
+    }
