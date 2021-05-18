@@ -328,6 +328,10 @@ a.button:hover {
     content: url('../media/instagram-logo-sangre.png');
 }
 
+.dollynormal:hover {
+    content: url('../media/DOLLY-logo2.png')
+}
+
 #linkedin {
     color: #fff;
 }
