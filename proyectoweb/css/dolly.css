@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 .container {
     width: 100%;
 }
@@ -66,4 +67,29 @@
     transform: translate( -50%);
     transition: transform 1s;
     padding-top: 200px;
+}
+
+.MensajeMovil {
+    display: none;
+}
+
+@media all and (max-width: 900px) {
+    h1 {
+        color: aliceblue;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 20px;
+    }
+    .container2 {
+        display: none;
+    }
+    .MensajeMovil {
+        padding: 10%;
+        padding-top: 140px;
+        display: block;
+    }
+    #ashfigure {
+        width: 78%;
+        display: block;
+        margin: auto;
+    }
 }
