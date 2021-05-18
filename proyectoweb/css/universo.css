@@ -181,20 +181,44 @@
     
     #fichaJuego {
         display: flex;
-        padding-left: 2%;
-        padding-right: 5%;
+        padding-left: 3%;
+        padding-right: 2%;
         background: url('../media/evildeadc64.gif');
         background-position-x: 98%;
         background-repeat: no-repeat;
+        padding-bottom: 5%;
     }
     
     #fichaJuego2 {
         display: flex;
-        padding-left: 2%;
-        padding-right: 5%;
-        background: url('../media/evildeadc64.gif');
-        background-position-x: 70%;
+        padding-left: 1%;
+        padding-right: 3%;
+        background: url('../media/evildeadpsx.gif');
+        background-position-x: 65%;
         background-repeat: no-repeat;
+        background-size: 25%;
+        padding-bottom: 5%;
+    }
+    
+    #fichaJuego3 {
+        display: flex;
+        padding-left: 3%;
+        padding-right: 2%;
+        background: url('../media/evildeadps2.gif');
+        background-position-x: 98%;
+        background-repeat: no-repeat;
+        padding-bottom: 5%;
+    }
+    
+    #fichaJuego4 {
+        display: flex;
+        padding-left: 1%;
+        padding-right: 3%;
+        background: url('../media/evildeadreg.gif');
+        background-position-x: 65%;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        padding-bottom: 5%;
     }
     
     #textoFicha {
@@ -210,6 +234,7 @@
     
     #textoFicha p {
         padding-left: 3%;
+        font-size: 18px;
     }
     
     #textoFicha a {
@@ -235,6 +260,16 @@
         animation: c64 linear infinite 4s alternate;
     }
     
+    #portadaps2 {
+        width: 30%;
+        height: auto;
+    }
+    
+    #portadaps2:hover {
+        content: url('../media/videojuegos/evil_dead_ps2.png');
+        animation: c64 linear infinite 4s alternate;
+    }
+    
     #portadapsx {
         width: 25%;
     }
@@ -244,11 +279,24 @@
         animation: c64 linear infinite 4s alternate;
     }
     
+    #portadareg {
+        width: 25%;
+    }
+    
+    #portadareg:hover {
+        content: url('../media/videojuegos/evil_dead_reg.png');
+        animation: c64 linear infinite 4s alternate;
+    }
+    
     #videoMovil {
         display: none;
     }
     
     #brMovilVisible {
+        display: none;
+    }
+    
+    #portadapsxmovil {
         display: none;
     }
     
@@ -281,13 +329,12 @@
             filter: grayscale(90%);
             transform: rotate(0deg);
         }
-        #fichaJuego {
+        #fichaJuego,
+        #fichaJuego2,
+        #fichaJuego3,
+        #fichaJuego4 {
             display: block;
             background: none;
-        }
-        #portadaC64 {
-            margin: auto;
-            display: block;
         }
         #textoFicha h2 {
             text-align: center;
@@ -297,8 +344,21 @@
             width: 90%;
             margin: auto;
         }
-        #brMovil {
+        #brMovil,
+        #portadapsx,
+        #portadareg {
             display: none;
+        }
+        #portadapsxmovil,
+        #portadaC64,
+        #portadaps2 {
+            margin: auto;
+            display: block;
+            width: 50%;
+        }
+        #portadapsxmovil:hover {
+            content: url('../media/videojuegos/evil_dead_psx.png');
+            animation: c64 linear infinite 4s alternate;
         }
         #brMovilVisible {
             display: block;
