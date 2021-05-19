@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Dosis&family=Fugaz+One&family=Josefin+Sans:ital,wght@1,100&display=swap');
+.home {
+    background-size: auto;
+    min-height: 0px;
+    box-shadow: none;
+}
+
+body {
+    background-image: url('../media/bgzonavip.png');
+    background-size: contain;
+    background-repeat: round;
+    min-height: 0px;
+    overflow-x: hidden;
+}
+
+#divh1 {
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 10em;
+    padding: 0;
+    color: white;
+    vertical-align: center;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+h1 span {
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+h1 span:first-child {
+    filter: invert(1);
+    transform: scale(0.8);
+    animation: traslado 1s forwards alternate;
+}
+
+h1 span:last-child {
+    filter: invert(1);
+    animation: traslado2 2s forwards alternate;
+}
+
+@keyframes traslado {
+    0% {
+        transform: translateX(-100%);
+    }
+    95% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-8%);
+        filter: invert(0);
+        transform: scale(0.8);
+    }
+}
+
+@keyframes traslado2 {
+    0% {
+        transform: translateX(200%);
+    }
+    95% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0%);
+        filter: invert(0);
+        transform: scale(0.8);
+    }
+}
+
+#zona {
+    font-family: 'Dosis', sans-serif;
+}
+
+#fan {
+    font-family: 'Fugaz One', cursive;
+}
+
+#makingletras {
+    font-size: 6em;
+    color: black;
+    animation: text-shadow 5s infinite;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: dotted;
+}
+
+#presentacion {
+    margin-left: 5%;
+    padding-bottom: 1%;
+}
+
+#presentacion p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+#contenidos {
+    width: 100%;
+}
+
+#makingof {
+    padding-left: 40%;
+}
+
+#divh1 {
+    background-image: url('../media/bgviphead.png');
+    background-size: cover;
+}
+
+#logos {
+    width: 100%;
+    display: flex;
+}
+
+#logos div img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+@keyframes text-shadow {
+    0% {
+        transform: translateY(0);
+        text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+    }
+    20% {
+        transform: translateY(-1em);
+        text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b, 0 -0.25em 0 #fefc4b;
+    }
+    40% {
+        transform: translateY(0.5em);
+        text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd, 0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+    }
+    60% {
+        transform: translateY(-0.25em);
+        text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd, 0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+    }
+    65% {
+        transform: translateY(0);
+        text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+        filter: invert(1);
+    }
+}
