@@ -1,10 +1,10 @@
 function cambiarModo() {
-    $('body').css('background', 'white');
+    $('body').css('background', 'rgb(223, 219, 219)');
     $('p').css('color', 'black');
     $('.botomododia').css('display', 'none');
     $('.botomodonoche').css('display', 'inline');
     $('.home').css('box-shadow', 'none');
-    $('#noche1').css('background', 'rgb(97, 255, 255)');
+    $('#noche1').css('background', '#45b2d3');
     $('#peli2').css('background', 'rgb(231, 95, 95)');
     $('#peli3').css('background', 'rgb(231, 177, 95)');
     $('#serie').css('background', 'rgb(95, 231, 124)');
