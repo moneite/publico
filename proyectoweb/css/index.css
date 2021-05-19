@@ -316,21 +316,38 @@ a.button:hover {
     font-size: 0.8em;
 }
 
-.ytnormal:hover {
-    content: url('../media/youtube-logo-sangre.png');
+.botomododia:hover,
+.botomodonoche:hover {
+    transition: 0.9s;
+    filter: invert(1);
 }
 
-.twnormal:hover {
-    content: url('../media/Twitter-Logo-sangre.png');
+.botomodonoche {
+    display: none;
 }
 
-.ignormal:hover {
-    content: url('../media/instagram-logo-sangre.png');
-}
-
-.dollynormal:hover {
-    content: url('../media/DOLLY-logo2.png');
-    transform: scale(1.2);
+@media all and (min-width: 900px) {
+    .ytnormal:hover {
+        transition: 0.9s;
+        filter: invert(1);
+        content: url('../media/youtube-logo-sangre.png');
+    }
+    .twnormal:hover {
+        transition: 0.9s;
+        filter: invert(1);
+        content: url('../media/Twitter-Logo-sangre.png');
+    }
+    .ignormal:hover {
+        transition: 0.9s;
+        filter: invert(1);
+        content: url('../media/instagram-logo-sangre.png');
+    }
+    .dollynormal:hover {
+        transition: 0.9s;
+        filter: invert(1);
+        content: url('../media/DOLLY-logo2.png');
+        transform: scale(1.2);
+    }
 }
 
 #linkedin {
