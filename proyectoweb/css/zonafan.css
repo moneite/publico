@@ -88,14 +88,14 @@ h1 span:last-child {
 }
 
 #presentacion {
-    margin-left: 5%;
     padding-bottom: 1%;
 }
 
 #presentacion p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 40px;
     color: black;
+    text-align: center;
 }
 
 #contenidos {
@@ -103,7 +103,9 @@ h1 span:last-child {
 }
 
 #makingof {
-    padding-left: 40%;
+    width: fit-content;
+    display: block;
+    margin: auto;
 }
 
 #divh1 {
@@ -111,15 +113,57 @@ h1 span:last-child {
     background-size: cover;
 }
 
-#logos {
+.logos {
     width: 100%;
     display: flex;
 }
 
-#logos div img {
+.logos div img {
     width: 80%;
     margin: auto;
     display: block;
+}
+
+#yt1 {
+    transform: translateX(-300%);
+}
+
+#yt2 {
+    transform: translateX(-500%);
+}
+
+#yt3 {
+    transform: translateX(500%);
+}
+
+#yt4 {
+    transform: translateX(300%);
+}
+
+.logomaking {
+    transition: 1s;
+}
+
+.logomaking:hover {
+    transition: 1s;
+    transform: scale(0.8);
+}
+
+#entrevistas {
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    padding-top: 3%;
+    z-index: 1;
+    background-image: url('../media/dirt-clipart-splatter-11.png');
+    background-size: contain;
+    background-repeat: round;
+}
+
+iframe {
+    padding-left: 1%;
+    width: 50%;
+    height: 500px;
 }
 
 @keyframes text-shadow {
@@ -144,4 +188,66 @@ h1 span:last-child {
         text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
         filter: invert(1);
     }
+}
+
+@media screen and (max-width:968px) {
+    .logos {
+        display: block;
+    }
+    #divyt4 {
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
+    #presentacion p {
+        font-size: 30px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .logos div img {
+        width: 45%
+    }
+    #ytpc {
+        display: none;
+    }
+    #entrevistas {
+        display: block;
+    }
+    iframe {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 250px;
+        padding-bottom: 2%;
+    }
+}
+
+.iamgenesfans {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.galleryfans {
+    display: block;
+    margin: auto;
+    width: 80%;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    vertical-align: middle;
+}
+
+.galleryfans:hover {
+    animation: move 10s ease;
+    -webkit-transform: scale(1.1);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.1);
+    /* Firefox */
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -o-transform: scale(1.1);
+    /* Opera */
+    transform: scale(1.1);
 }

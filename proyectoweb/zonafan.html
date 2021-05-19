@@ -82,19 +82,79 @@ fecha: Abril 2021
     <div id="divh1"><h1> <span id="zona"><br>ZONA</span><span id="fan">FAN</span></h1>
             </section>
             <div id="presentacion">
-                <p>Esta es una zona exclusiva para usuarios registrados, en ella encontrarás datos interesantes, entrevistas, making of y eventos para fans.</p>
+                <p>ESTA ZONA ES EXCLUSIVA PARA USUARIOS REGISTRADOS.
+                    <BR> AQUÍ PODRÁS DISFRUTAR DE MAKING OF, ENTREVISTAS Y DATOS INTERESANTES.
+                </p>
             </div>
             <div id="contenidos">
                 <div id="makingof">
                     <h2 id="makingletras">MAKING OF</h2>
                 </div>
             </div>
-            <div id="logos">
-                <div> <img class="logomaking" src="./media/logoEV1Making.png" alt="Logo Evil Dead "></div>
-                <div> <img class="logomaking" src="./media/logoEV2Making.png" alt="Logo Evil Dead "></div>
-                <div> <img class="logomaking" src="./media/logoEV3Making.png" alt="Logo Evil Dead "></div>
-                <div> <img class="logomaking" src="./media/logoEV1Making.png" alt="Logo Evil Dead "></div>
+            <div class="logos">
+                <div>
+                    <a href="https://youtu.be/hxX1vQuDizA" target="_blank"><img class="logomaking" id="logomaking1" src="./media/logoEV1Making.png" alt="Logo Evil Dead "></a>
+                </div>
+                <div>
+                    <a href="https://youtu.be/hN-WJQeaVcg" target="_blank"><img class="logomaking" id="logomaking2" src="./media/logoEV2Making.png" alt="Logo Evil Dead "></a>
+                </div>
+                <div>
+                    <a href="https://youtu.be/ofSuLv6KUzk" target="_blank"><img class="logomaking" id="logomaking3" src="./media/logoEV3Making.png" alt="Logo Evil Dead "></a>
+                </div>
+                <div id="divyt4">
+                    <a href="https://youtu.be/7bqLEHgt08M" target="_blank"><img class="logomaking" id="logomaking4" src="./media/logoEV4Making.png" alt="Logo Evil Dead "></a>
+                </div>
             </div>
+            <div class="logos" id="ytpc">
+                <div> <img id="yt1" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
+                <div> <img id="yt2" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
+                <div> <img id="yt3" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
+                <div> <img id="yt4" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
+            </div>
+
+            <div id="contenidos">
+                <div id="makingof">
+                    <h2 id="makingletras">ENTREVISTAS</h2>
+                </div>
+            </div>
+            <div id="entrevistas">
+
+                <iframe src="https://www.youtube.com/embed/9BYA8iE-sIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                <iframe src="https://www.youtube.com/embed/E1nFTrBIAkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div id="entrevistas">
+
+                <iframe src="https://www.youtube.com/embed/4Sa1iX3G9hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                <iframe src="https://www.youtube.com/embed/WDbYhV_Obqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div id="contenidos">
+                <div id="makingof">
+                    <h2 id="makingletras">FANDOM</h2>
+                </div>
+            </div>
+            <div class="iamgenesfans">
+                <div class="fotoburn">
+                    <img class="galleryfans" id="sl1" src="./media/sliderfans/SL1.jpg" alt="Logo Evil Dead ">
+                </div>
+                <div class="fotoburn">
+                    <img class="galleryfans" id="sl1" src="./media/sliderfans/SL2.jpg" alt="Logo Evil Dead ">
+                </div class="fotoburn">
+                <div class="fotoburn">
+                    <img class="galleryfans" id="sl1" src="./media/sliderfans/SL3.png" alt="Logo Evil Dead ">
+                </div>
+                <div class="fotoburn">
+                    <img class="galleryfans" id="sl1" src="./media/sliderfans/SL4.jpg" alt="Logo Evil Dead ">
+                </div>
+            </div>
+
 </body>
 <footer>
     <div class="footer ">
@@ -106,7 +166,7 @@ fecha: Abril 2021
             <a href="https://www.instagram.com/ashvsevildead/?hl=es " target="_blank "><img class="ignormal " src="./media/instagram-logo.png " alt="Logo instagram " height="30px "></a>
             <a href="./dolly.html"><img class="dollynormal" src="./media/DOLLY-logo.png" alt="Logo dolly" height="30px"></a>
             <a class="botomododia"><img onclick="cambiarModo()" src="./media/botonsol.png" alt="boton modo noche" height="30px"></a>
-            <a class="botomodonoche"> <img onclick="cambiarModo2()" src="./media/lunaboton.png" alt="boton modo noche" height="30px"></a>
+            <a class="botomodonoche"> <img onclick="cambiarModoFan()" src="./media/lunaboton.png" alt="boton modo noche" height="30px"></a>
 
         </div>
 
@@ -117,7 +177,8 @@ fecha: Abril 2021
 <script src="./js/login.js "></script>
 <script src="./js/cine.js "></script>
 <script src="./js/universo.js "></script>
-
+<script src="./js/zonafan.js "></script>
+<script src="./js/slider.js "></script>
 </body>
 
 </html>

@@ -20,4 +20,9 @@ function cambiarModo2() {
     $('#peli2').css('background-image', 'url("./media/evildead2bg.jpg")');
     $('#peli3').css('background-image', 'url("./media/evildead3bg.jpg")');
     $('#serie').css('background-image', 'url("./media/evildead4bg.jpg")');
+
+}
+
+function cambiarModoFan() {
+    location.reload()
 }
