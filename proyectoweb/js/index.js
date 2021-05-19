@@ -29,3 +29,7 @@ $(function() {
 AOS.init({
     duration: 1200,
 });
+
+window.onload = function() {
+    alert("El Dolly Zoom se encuentra en el footer.");
+};
