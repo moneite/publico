@@ -234,10 +234,6 @@ img.modal-preview {
     opacity: 0.6;
 }
 
-#cine {
-    color: red;
-}
-
 #sierra {
     display: inline;
     height: 35px;
@@ -259,6 +255,10 @@ img.modal-preview {
 #cine:hover,
 #zonafanenlace:hover,
 #sobremienlace:hover {
+    color: red;
+}
+
+#cine {
     color: red;
 }
 
