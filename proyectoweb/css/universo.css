@@ -13,6 +13,40 @@
         align-items: center;
     }
     
+    #sierra,
+    #escopeta,
+    #cabaña {
+        display: none;
+    }
+    
+    #cine:hover img,
+    #zonafanenlace:hover img,
+    #sobremienlace:hover img {
+        display: inline;
+        height: 35px;
+    }
+    
+    #cine:hover,
+    #zonafanenlace:hover,
+    #sobremienlace:hover {
+        color: red;
+    }
+    
+    #universo {
+        color: red;
+    }
+    
+    #libro {
+        display: inline;
+        height: 35px;
+    }
+    
+    #cine,
+    #zonafanenlace,
+    #sobremienlace {
+        color: white;
+    }
+    
     #videojuegos {
         width: 100%;
         height: 100%;

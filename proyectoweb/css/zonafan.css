@@ -71,6 +71,34 @@ h1 span:last-child {
     }
 }
 
+#sierra,
+#libro,
+#cabaña {
+    display: none;
+}
+
+#cine:hover img,
+#universo:hover img,
+#sobremienlace:hover img {
+    display: inline;
+    height: 35px;
+}
+
+#cine:hover,
+#universo:hover,
+#sobremienlace:hover {
+    color: red;
+}
+
+#sobremienlace {
+    color: red;
+}
+
+#cabaña {
+    display: inline;
+    height: 35px;
+}
+
 #zona {
     font-family: 'Dosis', sans-serif;
 }

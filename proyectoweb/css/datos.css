@@ -79,6 +79,43 @@ h2 {
     display: none;
 }
 
+#sierra {
+    display: none;
+}
+
+#cine:hover img {
+    display: inline;
+    height: 35px;
+}
+
+#cine:hover {
+    color: red;
+}
+
+#universo:hover {
+    color: red;
+}
+
+#universo:hover img,
+#cine:hover img,
+#sobreMi:hover img {
+    display: inline;
+    height: 35px;
+}
+
+#libro {
+    display: none;
+}
+
+#cine:hover img {
+    display: inline;
+    height: 35px;
+}
+
+#cine {
+    color: white;
+}
+
 @media only screen and (max-width: 640px) {
     body {
         background-image: url('../media/evildead3bg.jpg');

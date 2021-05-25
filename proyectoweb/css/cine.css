@@ -234,6 +234,34 @@ img.modal-preview {
     opacity: 0.6;
 }
 
+#cine {
+    color: red;
+}
+
+#sierra {
+    display: inline;
+    height: 35px;
+}
+
+#libro,
+#escopeta,
+#cabaña {
+    display: none;
+}
+
+#universo:hover img,
+#zonafanenlace:hover img,
+#sobremienlace:hover img {
+    display: inline;
+    height: 35px;
+}
+
+#cine:hover,
+#zonafanenlace:hover,
+#sobremienlace:hover {
+    color: red;
+}
+
 img.active,
 .preview:hover,
 .modal-preview:hover {
