@@ -2,6 +2,7 @@ window.onload = function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
         $('#loginOculto').css('display', 'none');
         $('#logout').css('display', 'inline-block');
+        $('#ZonaFan').css('display', 'inline-block')
         $('#conectado').css('display', 'inline-block');
     }
 }

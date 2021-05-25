@@ -228,6 +228,10 @@ body {
     height: 50px;
 }
 
+#ZonaFan {
+    display: none;
+}
+
 #logout:hover {
     content: url('../media/logout-rojo.png')
 }
