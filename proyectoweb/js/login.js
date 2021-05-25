@@ -3,7 +3,7 @@ window.onload = function comprobarLogin() {
         $('#loginOculto').css('display', 'none');
         $('#logout').css('display', 'inline-block');
         $('#ZonaFan').css('display', 'inline-block');
-        $('#sobreMi').CSS('display', 'inline-block');
+        $('#sobreMi').css('display', 'inline-block');
         $('#conectado').css('display', 'inline-block');
     }
 }
