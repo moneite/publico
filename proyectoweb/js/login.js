@@ -13,7 +13,7 @@ function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
             sessionStorage.removeItem("user");
-            location.reload();
+            location.href = "./index.html"
         } else {
 
         }
