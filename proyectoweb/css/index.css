@@ -331,6 +331,10 @@ a.button:hover {
     display: none;
 }
 
+#sobreMi {
+    display: none;
+}
+
 @media all and (min-width: 900px) {
     .ytnormal:hover {
         transition: 0.9s;
