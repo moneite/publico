@@ -13,12 +13,7 @@ function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
             sessionStorage.removeItem("user");
-            if ((window.location == "./zonafan.html") || (window.location == "./datos.html")) {
-                window.location.href = "./index.html"
-            } else {
-                location.reload();
-            }
-
+            location.reload();
         } else {
 
         }
