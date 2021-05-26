@@ -3,11 +3,19 @@ window.onload = function comprobarLogin() {
         $('#loginOculto').css('display', 'none');
         $('#logout').css('display', 'inline-block');
         $('#ZonaFan').css('display', 'inline-block');
-        $('#sobreMi').css('display', 'inline-block');
         $('#conectado').css('display', 'inline-block');
     }
 }
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
+
+function extras() {
+    if (sessionStorage.getItem("user").length > 0) {
+        window.location.href = "./zonfan.html";
+    } else {
+        window.alert("Debes estar logueado para acceder a esta página.");
+    }
+}
 
 
 function cerrarSesion() {

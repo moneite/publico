@@ -332,7 +332,7 @@ a.button:hover {
 }
 
 #sobreMi {
-    display: none;
+    display: inline-block;
 }
 
 @media all and (min-width: 900px) {
