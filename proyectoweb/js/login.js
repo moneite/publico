@@ -10,8 +10,8 @@ document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorag
 
 
 function extras() {
-    if (sessionStorage.getItem("user").length > 0) {
-        window.location.href = "./zonfan.html";
+    if (sessionStorage.length > 0) {
+        window.location.href = "./zonafan.html";
     } else {
         window.alert("Debes estar logueado para acceder a esta página.");
     }
