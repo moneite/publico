@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bebas+Neue&display=swap');
 body {
     background-image: url('../media/evildead3bg.jpg');
+    background-size: cover;
 }
 
 #ceneclogo {
@@ -116,6 +117,28 @@ h2 {
     color: white;
 }
 
+.GrupoDocumentos {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.documentos1 {
+    width: 100%;
+}
+
+.documentosIndividuales img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.documentosIndividuales:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 @media only screen and (max-width: 640px) {
     body {
         background-image: url('../media/evildead3bg.jpg');
@@ -172,5 +195,13 @@ h2 {
     }
     #ceneclogoMovil img {
         width: 100%;
+    }
+    .GrupoDocumentos {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .documentosIndividuales {
+        margin-bottom: 3%;
     }
 }
