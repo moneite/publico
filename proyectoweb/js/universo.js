@@ -1,3 +1,13 @@
+/*
+JavaScript
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+//Función que se encarga de introducir el modo día o noche, según sea conveniente y para ello altera el .css de la página a través de JQuery
 function cambiarModo() {
     $('body').css('background', 'rgb(223, 219, 219)');
     $('p').css('color', 'black');
@@ -11,6 +21,7 @@ function cambiarModo() {
     $('#fichaJuego').css('background-size', '25%');
 }
 
+//Función que se encarga de introducir el modo día o noche, según sea conveniente y para ello altera el .css de la página a través de JQuery
 function cambiarModo2() {
     $('body').css('background', 'black');
     $('p').css('color', 'white');
@@ -23,6 +34,7 @@ function cambiarModo2() {
 
 }
 
+//Función que para volver la página a su estado original tras aplicarle el modo noche realiza una recarga de la página
 function cambiarModoFan() {
     location.reload()
 }

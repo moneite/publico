@@ -1,3 +1,16 @@
+/*
+css
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+
+/*bloque que establece un estilo general de la pagina*/
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +20,9 @@
 body {
     background: #fff;
 }
+
+
+/*contenedor que contiene los campos y el boton de login*/
 
 .container {
     position: relative;
@@ -50,6 +66,9 @@ body {
     text-transform: uppercase;
 }
 
+
+/*campos de usuario y contraseña*/
+
 .container .box .row {
     width: 100%;
     margin: 25px 0;
@@ -90,15 +109,24 @@ body {
     width: 100%;
 }
 
+
+/*aquí establececemos el color del fondo y la animación que hace que cambie con el tiempo*/
+
 body {
     background: url(../media/backgroundLogin/bg1login.jpg);
     animation: chbg 15s infinite alternate;
     background-size: cover
 }
 
+
+/*cambio de color al pasar el ratón por encima*/
+
 #volverInicio:hover {
     color: red;
 }
+
+
+/*Creación del boton y su hover correspondiente*/
 
 .btn {
     position: relative;
@@ -122,6 +150,9 @@ body {
     color: black;
     font-size: 2em;
 }
+
+
+/*animación que permite que el fondo vaya cambiando conforme pasa el tiempo*/
 
 @keyframes chbg {
     0% {

@@ -1,3 +1,16 @@
+/*
+JavaScript
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+
+/*establecemos el fondo y caraceterísticas de esta sección*/
+
 .home {
     width: 100%;
     height: 100%;
@@ -12,13 +25,22 @@
     overflow-x: hidden;
 }
 
+
+/*establecemos el fondo de esta sección*/
+
 #peli2 {
     background-image: url("../media/evildead2bg.jpg");
 }
 
+
+/*establecemos el fondo de esta sección*/
+
 #peli3 {
     background-image: url("../media/evildead3bg.jpg");
 }
+
+
+/*establecemos el fondo de esta sección*/
 
 #serie {
     background-image: url("../media/evildead4bg.jpg");
@@ -38,11 +60,17 @@
     padding-right: 5%;
 }
 
+
+/*cambiamos el padding del texto en pantallas con menos de 700px de ancho*/
+
 @media all and (max-width:700px) {
     .myP {
         padding: 2%;
     }
 }
+
+
+/*diferentes ajustes del menú, como pegarlo a la parte superior de la pantalla al hacer scroll*/
 
 .nav {
     z-index: 10;
@@ -78,6 +106,9 @@
 .fondo {
     display: flex;
 }
+
+
+/*diferentes sombras a la imagen*/
 
 #logopeli1 {
     -webkit-filter: drop-shadow(10px 10px 10px #222);
@@ -176,6 +207,9 @@
     font-size: smaller;
 }
 
+
+/*modal que incluye el slider con fotos*/
+
 .modal {
     display: none;
     position: fixed;
@@ -202,8 +236,7 @@
 }
 
 
-/* Same with your slides, you set the display to none, because you want to choose which 
-one is shown at a time. */
+/*slides que se encuentran ocultos cuando no hacemos click en imágenes*/
 
 .slide {
     display: none;
@@ -213,26 +246,8 @@ one is shown at a time. */
     width: 100%;
 }
 
-.modal-preview {
-    width: 100%;
-}
 
-.dots {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-/* You want the previews a little transparent to show that they are "inactive". 
-You then add an .active or :hover class to animate the selections for your user when
-they interact with your controls and clickable content.
-*/
-
-img.preview,
-img.modal-preview {
-    opacity: 0.6;
-}
+/*iconos activos en visible e inactivos invisbles hasta hacer hover*/
 
 #sierra {
     display: inline;
@@ -262,19 +277,12 @@ img.modal-preview {
     color: red;
 }
 
-img.active,
-.preview:hover,
-.modal-preview:hover {
+img.active {
     opacity: 1;
 }
 
-img.hover-shadow {
-    transition: 0.3s;
-}
 
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/*diferentes iconos del slider*/
 
 .close {
     color: rgb(255, 0, 0);
@@ -377,6 +385,9 @@ img.hover-shadow {
     cursor: pointer;
 }
 
+
+/*margen de los sliders al mostrarse*/
+
 #Lightbox,
 #Lightbox2,
 #Lightbox3 {
@@ -399,6 +410,9 @@ img.hover-shadow {
         width: 100%;
     }
 }
+
+
+/*establecemos los ajustes responsive*/
 
 @media screen and (max-width:968px) {
     body {

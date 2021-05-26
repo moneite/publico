@@ -1,3 +1,16 @@
+/*
+JavaScript
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+//Función que se encarga de que aparezca la imagen que dice "ver en Youtube" cada vez que pasamos el ratón por encima de otras imágenes. De esta
+//forma aunque hagamos hover en un elemento diferente se le aplica un translate en el eje x al elemento deseado. En este caso la foto que muestra el cartel informativo
+//"ver en Youtube"
 $(function() {
 
     $('#logomaking1').hover(function() {

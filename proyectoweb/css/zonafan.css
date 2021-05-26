@@ -1,9 +1,25 @@
+/*
+css
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+
+/*Importación de diferentes fuentes de google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Dosis&family=Fugaz+One&family=Josefin+Sans:ital,wght@1,100&display=swap');
 .home {
     background-size: auto;
     min-height: 0px;
     box-shadow: none;
 }
+
+
+/*establecemos el fondo y las caracteristicas del body*/
 
 body {
     background-image: url('../media/bgzonavip.png');
@@ -32,16 +48,25 @@ h1 span {
     display: inline-block;
 }
 
+
+/*filtro y animación aplicada al primer span que aparece en el h1*/
+
 h1 span:first-child {
     filter: invert(1);
     transform: scale(0.8);
     animation: traslado 1s forwards alternate;
 }
 
+
+/*filtro y animación aplicada al segundo span que aparece en el h1*/
+
 h1 span:last-child {
     filter: invert(1);
     animation: traslado2 2s forwards alternate;
 }
+
+
+/*animación que realiza el movimiento en el eje x del objeto al que se le aplique además de invertir sus colores*/
 
 @keyframes traslado {
     0% {
@@ -57,6 +82,9 @@ h1 span:last-child {
     }
 }
 
+
+/*animación que realiza el movimiento en el eje x del objeto al que se le aplique además de invertir sus colores*/
+
 @keyframes traslado2 {
     0% {
         transform: translateX(200%);
@@ -71,11 +99,17 @@ h1 span:last-child {
     }
 }
 
+
+/*logos invisibles*/
+
 #sierra,
 #libro,
 #cabaña {
     display: none;
 }
+
+
+/*logos que aparecen al hacer hover*/
 
 #cine:hover img,
 #universo:hover img,
@@ -83,6 +117,9 @@ h1 span:last-child {
     display: inline;
     height: 35px;
 }
+
+
+/*cambio de color con el hover*/
 
 #cine:hover,
 #universo:hover,
@@ -115,6 +152,9 @@ h1 span:last-child {
     font-family: 'Fugaz One', cursive;
 }
 
+
+/*estilo del cartel de making of y aplicación de su animación correspondiente*/
+
 #makingletras {
     font-size: 6em;
     color: black;
@@ -143,6 +183,9 @@ h1 span:last-child {
     display: block;
     margin: auto;
 }
+
+
+/*background de la cabecera de la web de zona fan*/
 
 #divh1 {
     background-image: url('../media/bgviphead.png');
@@ -185,6 +228,9 @@ h1 span:last-child {
     transform: scale(0.8);
 }
 
+
+/*fondo de la sección que incluye las entrevistas de los actores y actrices*/
+
 #entrevistas {
     margin-left: 5%;
     width: 90%;
@@ -195,6 +241,9 @@ h1 span:last-child {
     background-size: contain;
     background-repeat: round;
 }
+
+
+/*iframe que contiene los vídeos de youtube*/
 
 iframe {
     padding-left: 1%;
@@ -207,9 +256,6 @@ iframe {
     width: 100%;
     overflow: hidden;
     overflow-x: hidden;
-    /* background-image: url('../media/patron.png');
-        background-size: cover;
-        background-repeat: repeat-y;*/
 }
 
 .galleryfans {
@@ -237,6 +283,9 @@ iframe {
     transform: scale(1.1);
 }
 
+
+/*animación que realiza un traslado con retraso uno del otro de una sombra formada a partir del texto con diferentes colroes cada sombra*/
+
 @keyframes text-shadow {
     0% {
         transform: translateY(0);
@@ -260,6 +309,9 @@ iframe {
         filter: invert(1);
     }
 }
+
+
+/*diferentes parámetros para adaptar lo anterior a móvil*/
 
 @media screen and (max-width:968px) {
     .logos {

@@ -36,12 +36,15 @@ Fecha: Mayo 2021
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.png" />
     <link href='https://css.gg/css' rel='stylesheet'>
+    <!-- importacion de la libreria de animaciones para fotos -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
+<!--inicio del body-->
 
 <body>
+    <!--Menú principal-->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -81,6 +84,7 @@ Fecha: Mayo 2021
         </div>
     </nav>
 
+    <!--Sección con datos de la primera película-->
     <section class="home " id="noche1">
         <div class="divlogopeli1">
             <img id="logopeli1" src="./media/the-evil-dead-1981.png" alt="Logo primera pelicula" data-aos="zoom-in">
@@ -95,15 +99,16 @@ Fecha: Mayo 2021
 
             <br>
             <br>
+            <!--Botones-->
             <span class="botones"><a onclick= "overlayOn()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3"onclick="openLightbox();toSlide(1)">+Imágenes 🖼️</a> <a href="#" onclick="extras();" class="button" id="button4">+Extras ❕</a></span>
 
             </p>
-
+            <!--Vídeo oculto-->
             <div id="overlayVideo" class="overlayVideoGeneral" onclick="overlayOff()">
                 <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/NL6mioAlpJk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
 
-
+            <!--Slider de fotos oculto-->
             <div id="Lightbox" class="modal">
                 <span class="close pointer" onclick="closeLightbox()">&times;</span>
                 <div class="modal-content">
@@ -130,12 +135,12 @@ Fecha: Mayo 2021
 
 
         </div>
-
+        <!--Imagen visible en móvil-->
         <img id="posterpeli1" src="./media/Evildead1.png" alt="Poster de Evil Dead" data-aos="fade-right">
 
         </div>
         </section>
-
+        <!--Sección con datos de la segunda película-->
         <section class="home " id="peli2">
             <div class="divlogopeli2">
                 <img id="logopeli2" src="./media/the-evil-dead-2.png" alt="Logo primera pelicula" data-aos="zoom-in">
@@ -152,13 +157,14 @@ Fecha: Mayo 2021
 
                         <br>
                         <br>
+                        <!--Botones-->
                         <span class="botones"><a onclick= "overlayOn2()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox2();toSlide2(1)">+Imágenes 🖼️</a> <a href="#" onclick="extras();" class="button" id="button4">+Extras ❕</a></span>
                     </p>
-
+                    <!--Vídeo oculto-->
                     <div id="overlayVideo2" class="overlayVideoGeneral" onclick="overlayOff2()">
                         <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/s7WNgzilRBw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
-
+                    <!--Slider de fotos oculto-->
                     <div id="Lightbox2" class="modal">
                         <span class="close pointer" onclick="closeLightbox2()">&times;</span>
                         <div class="modal-content" id="light2">
@@ -189,6 +195,7 @@ Fecha: Mayo 2021
 
 
                 </div>
+                <!--Imagen visible en móvil-->
                 <div>
                     <div>
                         <img id="posterpeli2movil" src="./media/esqueletoEV2.png" alt="Poster de Evil Dead" data-aos="fade-right">
@@ -198,7 +205,7 @@ Fecha: Mayo 2021
             </div>
         </section>
 
-
+        <!--Sección con datos de la tercera película-->
         <section class="home " id="peli3">
             <div class="divlogopeli3">
                 <img id="logopeli3" src="./media/army-of-darkness-logo.png" alt="Logo primera pelicula" data-aos="zoom-in">
@@ -215,13 +222,16 @@ Fecha: Mayo 2021
                         su totalidad el terror para centrarse en la comedia, la fantasía y la acción.
                         <br>
                         <br>
+                        <!--Botones-->
                         <span class="botones"><a onclick="overlayOn3()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox3();toSlide3(1)">+Imágenes 🖼️</a> <a href="#" onclick="extras();" class="button" id="button4">+Extras ❕</a></span>
                         <img id="necronomiconpng" src="./media/necronomicon.png" alt="Foto promocional Army of Darkness" data-aos="zoom-in" />
                     </p>
+                    <!--Vídeo oculto-->
                     <div id="overlayVideo3" class="overlayVideoGeneral" onclick="overlayOff3()">
                         <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/UHZQEtG8xYo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                 </div>
+                <!--Slider de fotos oculto-->
                 <div id="Lightbox3" class="modal">
                     <span class="close pointer" onclick="closeLightbox3()">&times;</span>
                     <div class="modal-content" id="light3">
@@ -256,6 +266,7 @@ Fecha: Mayo 2021
 
 
             </div>
+            <!--Imagen visible en móvil-->
             <div id="divmovil3">
                 <img class="posterpeli3movil" id="evilashmovil" src="./media/EvilAshArmyOfDarkness.png" alt="Poster de Evil Dead" data-aos="fade-right">
                 <img id="necronomiconpngmovil" src="./media/necronomicon.png" alt="Foto promocional Army of Darkness" data-aos="zoom-in" />
@@ -264,7 +275,7 @@ Fecha: Mayo 2021
         </section>
 
         </section>
-
+        <!--Sección con datos de la serie-->
         <section class="home " id="serie">
             <div class="divlogopeli2" id="divlogoserie">
                 <img id="logoserie" src="./media/Ash-vs-Evil-Dead_logo.png" alt="Logo primera pelicula" data-aos="zoom-in">
@@ -281,13 +292,14 @@ Fecha: Mayo 2021
                         más gamberra que ha dado la televisión.
                         <br>
                         <br>
+                        <!--Botones-->
                         <span class="botones"><a onclick= "overlayOn5()" class="button" id="button2">+Trailer 🎬</a> <a href="#" class="button" id="button3" onclick="openLightbox5();toSlide5(1)">+Imágenes 🖼️</a> <a href="#" onclick="extras();" class="button" id="button4">+Extras ❕</a></span>
                     </p>
-
+                    <!--Vídeo oculto-->
                     <div id="overlaySerie" class="overlayVideoGeneral" onclick="overlayOff5()">
                         <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/-Yq3jeOmxSk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
-
+                    <!--Slider de fotos oculto-->
                     <div id="Lightbox5" class="modal">
                         <span class="close pointer" onclick="closeLightbox5()">&times;</span>
                         <div class="modal-content" id="light2">
@@ -318,6 +330,7 @@ Fecha: Mayo 2021
 
 
                 </div>
+                <!--Imagen visible en móvil-->
                 <div>
                     <div id="serieposterdivmovil">
                         <img id="posterseriemovil" src="./media/ashvsevildead.png" alt="Poster de Evil Dead" data-aos="fade-right">
@@ -329,7 +342,7 @@ Fecha: Mayo 2021
 
 
 
-
+        <!--Footer con enlaces a redes sociales, Dolly y Modo día/noche-->
         <footer>
             <div class="footer">
                 <div class="row">
@@ -347,6 +360,8 @@ Fecha: Mayo 2021
 
             </div>
         </footer>
+
+        <!--importación de javascript-->
         <script src="./js/login.js"></script>
         <script src="./js/cine.js"></script>
         <script src="./js/universo.js"></script>

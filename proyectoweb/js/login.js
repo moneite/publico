@@ -1,14 +1,26 @@
+/*
+JavaScript
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+//Función que comprueba si el usuario está logueado. Si lo está muestra y oculta diferentes partes de la web.
 window.onload = function comprobarLogin() {
-    if (sessionStorage.getItem("user").length > 0) {
-        $('#loginOculto').css('display', 'none');
-        $('#logout').css('display', 'inline-block');
-        $('#ZonaFan').css('display', 'inline-block');
-        $('#conectado').css('display', 'inline-block');
+        if (sessionStorage.getItem("user").length > 0) {
+            $('#loginOculto').css('display', 'none');
+            $('#logout').css('display', 'inline-block');
+            $('#ZonaFan').css('display', 'inline-block');
+            $('#conectado').css('display', 'inline-block');
+        }
     }
-}
+    //Linea que muestra el nombre de usuario
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
 
-
+//Función encargada de dar o no acceso a la página de zona fan desde el boton de extras de la sección de cine.
 function extras() {
     if (sessionStorage.length > 0) {
         window.location.href = "./zonafan.html";
@@ -17,7 +29,7 @@ function extras() {
     }
 }
 
-
+//Función que elimina el sessionstorage y por lo tanto cierra sesion. Para ello muestra un alert de confirmación
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -32,6 +44,7 @@ function cerrarSesion() {
     return false;
 }
 
+//Función encargada de leer un XML y llamar a otras funciones a partrir de esta
 function leerXML() {
 
 
@@ -47,7 +60,7 @@ function leerXML() {
 
 }
 
-
+//Función que comprueba si un xml contiene el nombre de usuario y de pass introducidos anteriormente por el usuario en la página de login
 function miFuncion(xml) {
 
     var i;

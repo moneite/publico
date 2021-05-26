@@ -3,9 +3,12 @@
 
 <!--
 HTML
-web o pagina: Evil Dead Website
-autor: Miguel Ángel Arcos Reyes
-fecha: Abril 2021
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
 -->
 
 <head>
@@ -34,12 +37,15 @@ fecha: Abril 2021
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.png" />
     <link href='https://css.gg/css' rel='stylesheet'>
+    <!-- importacion de la libreria de animaciones para fotos -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
+<!--inicio del body-->
 
 <body>
+    <!--Menú principal-->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -78,45 +84,50 @@ fecha: Abril 2021
 
         </div>
     </nav>
+    <!--Primera Sección que incluye la cabecera-->
     <section class="home">
     <div id="divh1"><h1> <span id="zona"><br>ZONA</span><span id="fan">FAN</span></h1>
             </section>
+            <!--Descripción de la sección-->
             <div id="presentacion">
                 <p>ESTA ZONA ES EXCLUSIVA PARA USUARIOS REGISTRADOS.
                     <BR> AQUÍ PODRÁS DISFRUTAR DE MAKING OF, ENTREVISTAS Y DATOS INTERESANTES.
                 </p>
             </div>
+            <!--Cartel Informativo-->
             <div id="contenidos">
                 <div id="makingof">
                     <h2 id="makingletras">MAKING OF</h2>
                 </div>
             </div>
+            <!--Logos de las peliculas que redirigen al making of de cada una-->
             <div class="logos">
                 <div>
                     <a href="https://youtu.be/hxX1vQuDizA" target="_blank"><img class="logomaking" id="logomaking1" src="./media/logoEV1Making.png" alt="Logo Evil Dead "></a>
                 </div>
                 <div>
-                    <a href="https://youtu.be/hN-WJQeaVcg" target="_blank"><img class="logomaking" id="logomaking2" src="./media/logoEV2Making.png" alt="Logo Evil Dead "></a>
+                    <a href="https://youtu.be/hN-WJQeaVcg" target="_blank"><img class="logomaking" id="logomaking2" src="./media/logoEV2Making.png" alt="Logo Evil Dead 2"></a>
                 </div>
                 <div>
-                    <a href="https://youtu.be/ofSuLv6KUzk" target="_blank"><img class="logomaking" id="logomaking3" src="./media/logoEV3Making.png" alt="Logo Evil Dead "></a>
+                    <a href="https://youtu.be/ofSuLv6KUzk" target="_blank"><img class="logomaking" id="logomaking3" src="./media/logoEV3Making.png" alt="Logo Army Of Darkness"></a>
                 </div>
                 <div id="divyt4">
-                    <a href="https://youtu.be/7bqLEHgt08M" target="_blank"><img class="logomaking" id="logomaking4" src="./media/logoEV4Making.png" alt="Logo Evil Dead "></a>
+                    <a href="https://youtu.be/7bqLEHgt08M" target="_blank"><img class="logomaking" id="logomaking4" src="./media/logoEV4Making.png" alt="Logo Ash vS Evil Dead "></a>
                 </div>
             </div>
             <div class="logos" id="ytpc">
-                <div> <img id="yt1" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
-                <div> <img id="yt2" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
-                <div> <img id="yt3" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
-                <div> <img id="yt4" class="logomaking" src="./media/verenYT.png" alt="Logo Evil Dead "></div>
+                <div> <img id="yt1" class="logomaking" src="./media/verenYT.png" alt="Cartel Ver en Youtube"></div>
+                <div> <img id="yt2" class="logomaking" src="./media/verenYT.png" alt="Cartel Ver en Youtube"></div>
+                <div> <img id="yt3" class="logomaking" src="./media/verenYT.png" alt="Cartel Ver en Youtube"></div>
+                <div> <img id="yt4" class="logomaking" src="./media/verenYT.png" alt="Cartel Ver en Youtube"></div>
             </div>
-
+            <!--Cartel Informativo-->
             <div id="contenidos">
                 <div id="makingof">
                     <h2 id="makingletras">ENTREVISTAS</h2>
                 </div>
             </div>
+            <!--iframes de Youtube con entrevistas-->
             <div id="entrevistas">
 
                 <iframe src="https://www.youtube.com/embed/9BYA8iE-sIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,12 +145,13 @@ fecha: Abril 2021
                 <iframe src="https://www.youtube.com/embed/WDbYhV_Obqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
-
+            <!--Cartel Informativo-->
             <div id="contenidos">
                 <div id="makingof">
                     <h2 id="makingletras">FANDOM</h2>
                 </div>
             </div>
+            <!--Fotos de fans que redirigen a paginas del fandom-->
             <div class="imagenesfans">
                 <div class="fotoburn">
                     <a href="https://www.facebook.com/ladies.of.evil.dead" target="_blank"><img class="galleryfans" id="sl1" src="./media/sliderfans/SL1.jpg" alt="Logo Evil Dead "></a>
@@ -155,7 +167,9 @@ fecha: Abril 2021
                 </div>
             </div>
 
+
 </body>
+<!--Footer con enlaces a redes sociales, Dolly y Modo día/noche-->
 <footer>
     <div class="footer ">
         <div class="row ">
@@ -174,6 +188,8 @@ fecha: Abril 2021
 
     </div>
 </footer>
+
+<!--importación de javascript-->
 <script src="./js/login.js "></script>
 <script src="./js/cine.js "></script>
 <script src="./js/universo.js "></script>

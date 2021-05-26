@@ -3,9 +3,12 @@
 
 <!--
 HTML
-web o pagina: Evil Dead Website
-autor: Miguel Ángel Arcos Reyes
-fecha: Abril 2021
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
 -->
 
 <head>
@@ -39,12 +42,17 @@ fecha: Abril 2021
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.png" />
     <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- importacion de la libreria de animaciones para fotos -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
 
+<!--inicio del body-->
+
 <body>
+    <!--Menú principal-->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -83,9 +91,13 @@ fecha: Abril 2021
 
         </div>
     </nav>
+
+    <!--Primera Sección sobre comics-->
     <section class="home">
+        <!--Título animado de la sección-->
     <div id="divh1"><h1> <span><br id="brMovil"><br >¡ MEJORES CÓMICS DE </span><span>EVIL DEAD!</span></h1>
         </div>
+        <!--Portadas de los comics-->
         <div class="comics">
             <img alt="portada de comic" id="ArmyVsMarvel" src="./media/comics/marvel_zombies.png ">
             <img alt="portada de comic" id="ATA" src="./media/comics/ATA.png ">
@@ -97,11 +109,15 @@ fecha: Abril 2021
         </div>
 
         </section>
+
+        <!--Segunda Sección sobre videojuegos-->
         <section class="home" id="videojuegos">
+            <!--Título animado de la sección-->
             <div id="divVideojuegos">
                 <h1><span><br id="brMovil">TODOS LOS </span><span> VIDEOJUEGOS DE EVIL DEAD</span></h1>
             </div>
         </section>
+        <!--Fichas con datos de los videojuegos-->
         <div id="fichaJuego">
             <img alt="portada de videojuego" id="portadaC64" src="./media/videojuegos/evil_dead_c64_cover.png">
             <div id="textoFicha">
@@ -118,10 +134,12 @@ fecha: Abril 2021
                     juega como Ash, quien tiene que enfrentarse a las fuerzas del mal collecionando páginas del Necronomicón antes de que el mal acabe contigo. Ash también puede coger armas como palas, escopetas y hachas. El juego actualmente es gratuito
                     y puede descargarse desde <a href="http://www.c64.com/?type=1&id=2140" target="_blank ">este enlace</a>.</p>
             </div>
+            <!--Imagen visible en modo movil-->
             <img alt="video evil dead juego" id="videoMovil" src="./media/evildeadc64.gif">
         </div>
         <br><br><br id="brMovilVisible"><br id="brMovilVisible">
         <div id="fichaJuego2">
+            <!--Imagen visible en modo movil-->
             <img alt="portada de videojuego" id="portadapsxmovil" src="./media/videojuegos/evil_dead_psx_cover.png">
 
             <div id="textoFicha" class="tituloderecha">
@@ -139,7 +157,7 @@ fecha: Abril 2021
                     si eres un coleccionista y un gran fan de la franquicia Evil Dead.</p>
             </div>
             <img alt="portada de videojuego" id="portadapsx" src="./media/videojuegos/evil_dead_psx_cover.png">
-
+            <!--Imagen visible en modo movil-->
             <img alt="video evil dead juego" id="videoMovil" src="./media/evildeadpsx.gif">
         </div> <br><br><br id="brMovilVisible"><br id="brMovilVisible">
         <div id="fichaJuego3">
@@ -160,9 +178,11 @@ fecha: Abril 2021
                     la actuación de voz es una de las mejores realizadas por el actor Bruce Campbell. En resumen, es un "must" que ningún fan de la saga debería perderse.
                 </p>
             </div>
+            <!--Imagen visible en modo movil-->
             <img alt="video evil dead juego" id="videoMovil" src="./media/evildeadps2.gif">
         </div><br><br><br id="brMovilVisible"><br id="brMovilVisible">
         <div id="fichaJuego4">
+            <!--Imagen visible en modo movil-->
             <img alt="portada de videojuego" id="portadapsxmovil" src="./media/videojuegos/evil_dead_reg_cover.png">
 
             <div id="textoFicha" class="tituloderecha">
@@ -180,12 +200,13 @@ fecha: Abril 2021
                     de apocalipsis que solo Ash y su nuevo compañero, Sam, son capaces de evitar.</p>
             </div>
             <img alt="portada de videojuego" id="portadareg" src="./media/videojuegos/evil_dead_reg_cover.png">
-
+            <!--Imagen visible en modo movil-->
             <img alt="video evil dead juego" id="videoMovil" src="./media/evildeadreg.gif">
         </div>
 
 
 </body>
+<!--Footer con enlaces a redes sociales, Dolly y Modo día/noche-->
 <footer>
     <div class="footer ">
         <div class="row ">
@@ -204,6 +225,8 @@ fecha: Abril 2021
 
     </div>
 </footer>
+
+<!--importación de javascript-->
 <script src="./js/login.js "></script>
 <script src="./js/cine.js "></script>
 <script src="./js/universo.js "></script>

@@ -1,3 +1,13 @@
+/*
+css
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
 html,
 body {
     margin: 0;
@@ -10,6 +20,9 @@ body {
     color: #fff;
 }
 
+
+/*estilos aplicados al menú*/
+
 .nav {
     width: 100%;
     height: 65px;
@@ -17,6 +30,9 @@ body {
     line-height: 65px;
     text-align: center;
 }
+
+
+/*logo del interior del menú*/
 
 .nav div.logo {
     float: left;
@@ -64,11 +80,17 @@ body {
     text-shadow: 0px 2px #000000;
 }
 
+
+/*cambio del cursor cuando pasemos el ratón por la parte superior del menú*/
+
 .nav div.main_list ul li a:hover {
     color: #d60909;
     font-weight: bolder;
     cursor: url("../media/manoevildead.png"), auto;
 }
+
+
+/*establecemos el estilo de la clase home entre lo que se incluye su fondo*/
 
 .home {
     width: 100%;
@@ -98,6 +120,9 @@ body {
     font-weight: bold;
 }
 
+
+/*entre 768 px y 1034px de anchura cambiamos el margen*/
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         margin: 0;
@@ -123,6 +148,9 @@ body {
     width: 100%;
     height: 4px;
 }
+
+
+/*animaciones del menú de movil*/
 
 .navTrigger i:nth-child(1) {
     -webkit-animation: outT 0.8s backwards;
@@ -184,6 +212,9 @@ body {
     }
 }
 
+
+/*tamaño del nav cuando esté scrolleada la página*/
+
 .nav.scrolled {
     background-color: rgb(0, 0, 0);
     transition: background-color 200ms linear;
@@ -231,6 +262,9 @@ body {
 #ZonaFan {
     display: none;
 }
+
+
+/*cambio de imágenes cuando hacemos hover en el login*/
 
 #logout:hover {
     content: url('../media/logout-rojo.png')
@@ -312,6 +346,9 @@ a.button:hover {
     padding-right: 0px;
 }
 
+
+/*establecemos el footer y sus botones y dimensiones*/
+
 .footer .row {
     width: 100%;
     margin: 1% 0%;
@@ -334,6 +371,9 @@ a.button:hover {
 #sobreMi {
     display: inline-block;
 }
+
+
+/*caracteristicas para dispositivos con dimensiones mayores de 900px*/
 
 @media all and (min-width: 900px) {
     .ytnormal:hover {
@@ -369,6 +409,9 @@ a.button:hover {
         margin: 0.2em auto;
     }
 }
+
+
+/*establecemos diferentes parámetros para adaptar lo anterior a dispositivos con pantalla de menos de 968px de ancho*/
 
 @media screen and (max-width:968px) {
     body {

@@ -3,9 +3,12 @@
 
 <!--
 HTML
-web o pagina: Evil Dead Website
-autor: Miguel Ángel Arcos Reyes
-fecha: Abril 2021
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
 -->
 
 <head>
@@ -34,10 +37,13 @@ fecha: Abril 2021
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./media/icono.png" />
     <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- importacion de la libreria de animaciones para fotos -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
+<!--inicio del body-->
 
 <body>
     <nav class="nav">
@@ -68,19 +74,21 @@ fecha: Abril 2021
         </div>
     </nav>
 
-
+    <!--Mensaje visible en móvil-->
     <div class="MensajeMovil">
-        <h1>"Si quieres ver un efecto molón de Dolly Zoom tienes que ver este enlace desde un pc"</h1>
+        <h1>"Si quieres ver un efecto molón de Dolly Zoom y otro de Ken Burns tienes que ver este enlace desde un pc"</h1>
         <img id="ashfigure" src="./media/ashfigure.png" alt="ash guiñando" />
     </div>
-
+    <!--Imágenes para efecto Dolly-->
     <div class="container2">
         <div class="front"><img id="ashDolly" src="./media/ash.png" alt="frente del efecto" /></div>
         <div class="background"><img src="./media/Evil-dead-2-cabin.jpg" alt="fondo del efecto" /></div>
     </div>
+    <!--Imagen efecto Ken Burns-->
     <div class="image-wrap">
         <img src="./media/evildeadWallpaper.jpg" alt="evilDeadWallpaper">
     </div>
+    <!--importación de javascript-->
     <script src="./js/login.js"></script>
 </body>
 

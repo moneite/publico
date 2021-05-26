@@ -1,8 +1,24 @@
+/*
+css
+web o pagina: Evil Dead Project
+Asignaturas: Lenguaje de Marcas, Sistemas Informáticos y Entornos de Desarrollo
+Curso: 1º Desarrollo de Aplicaciones Multiplataforma
+Centro: Cenec Málaga
+Autor: Miguel Ángel Arcos Reyes
+Fecha: Mayo 2021
+*/
+
+
+/*Importación de diferentes fuentes de google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bebas+Neue&display=swap');
 body {
     background-image: url('../media/evildead3bg.jpg');
     background-size: cover;
 }
+
+
+/*logos*/
 
 #ceneclogo {
     height: 90%;
@@ -11,6 +27,9 @@ body {
 #logocenec {
     width: 35%;
 }
+
+
+/*caraceterísticas de texto*/
 
 h2 {
     font-family: 'Bebas Neue', cursive;
@@ -80,42 +99,8 @@ h2 {
     display: none;
 }
 
-#sierra {
-    display: none;
-}
 
-#cine:hover img {
-    display: inline;
-    height: 35px;
-}
-
-#cine:hover {
-    color: red;
-}
-
-#universo:hover {
-    color: red;
-}
-
-#universo:hover img,
-#cine:hover img,
-#sobreMi:hover img {
-    display: inline;
-    height: 35px;
-}
-
-#libro {
-    display: none;
-}
-
-#cine:hover img {
-    display: inline;
-    height: 35px;
-}
-
-#cine {
-    color: white;
-}
+/*div con los documentos*/
 
 .GrupoDocumentos {
     width: 80%;
@@ -138,6 +123,9 @@ h2 {
     transform: scale(1.1);
     transition: 1s;
 }
+
+
+/*diferentes características para el modo móvil*/
 
 @media only screen and (max-width: 640px) {
     body {
